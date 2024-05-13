@@ -1,0 +1,6399 @@
+ 
+  Executable path :
+     C:\PROGRA~1\ANSYSI~1\v241\polyflow\polyflow24.1.0\win64\bin\polyflow.exe
+  Build info      :
+     winx64_IntelOneAPI23_VS19 build: Fri 02/02/2024 04:30:30 on milw16polybld17 Windows
+  Arguments list  :
+     -ES full -s polyflow.p3rc -CFDENTERPRISE -MGR -default_output
+
+ * ENVIRONMENT VARIABLES
+  HOME=C:\Users\ml2954
+  POLYFLOW=C:\PROGRA~1\ANSYSI~1\v241\polyflow\polyflow24.1.0\win64
+  TMP=C:\Users\ml2954\AppData\Local\Temp
+  USERNAME=ml2954
+  COMPUTERNAME=CSC8MS9WM3
+
+ * ARGUMENTS
+  Argument [-default_output] to force the creation of output files for CFD-Post.
+  Argument [-CFDENTERPRISE] to specify the CFD Enterprise licensed version of Polyflow.
+  Argument [-MGR] to inform Polyflow that it has been launched from Workbench.
+  Argument [-ES full] to specify operating mode of the expert system.
+    No facts file saved.
+  Argument [-s polyflow.p3rc] to specify the startup (.p3rc) file.
+    The following keywords have been set:
+
+
+ * STARTUP FILES
+  polyflow.p3rc (ARGUMENT)
+  C:\PROGRA~1\ANSYSI~1\v241\polyflow\polyflow24.1.0\win64/.p3rc (POLYFLOW)
+
+ * VALID KEYWORDS
+  MAXPOS=2000
+    description: maximum number of positions stored along the pathline of virtual particles
+    valid values: {between 1 and 50 000}
+
+ 
+ Memory information : at start
+    PID                      :      22588
+    Max Virtual Memory       :       4936 Mbytes
+
+
+
+ PPPPPP   OOOOO  LL   YY    YY     FFFFFFF LL      OOOOO  WW    WW
+ PP   PP OO   OO LL   YY    YY    FF      LL     OO   OO WW    WW
+ PP   PP OO   OO LL   YY    YY   FF      LL     OO   OO WW    WW
+ PPPPPP  OO   OO LL    YY  YY   FFFFF   LL     OO   OO WW    WW
+ PP      OO   OO LL     YYYY   FF      LL     OO   OO WW W  WW
+ PP      OO   OO LL      YY   FF      LL     OO   OO WW W  WW
+ PP      OO   OO LL      YY  FF      LL     OO   OO WWW  WWW
+ PP       OOOOO  LLLLLLL YY FF      LLLLLLL OOOOO  WW    WW
+
+
+
+ *****************************************
+ *                                       *
+ *    Ansys Belgium s.a.                 *
+ *    Avenue Pasteur, 4                  *
+ *    B-1300 WAVRE                       *
+ *    BELGIUM                            *
+ *                                       *
+ *    TEL : 32-(0)10-452861              *
+ *    FAX : 32-(0)10-453009              *
+ *                                       *
+ *    URL : www.ansys.com                *
+ *          www.ansys.com/products       *
+ *                                       *
+ *****************************************
+
+
+
+
+ ***************************
+ *                         *
+ *  Build 02022024043030   *
+ *                         *
+ ***************************
+
+
+
+ Copyright(C) 1982-2023 ANSYS, Inc. All rights reserved.
+ Unauthorized use, distribution or duplication is prohibited.
+ This product is subject to U.S. laws governing export and re-export.
+ For full Legal Notice, see documentation.
+
+ -----------------------------------------
+ 2024 R1
+ 
+ Point Releases and Patches installed:
+ 
+ Ansys, Inc. License Manager 2024 R1
+ Viewer 2024 R1
+ Discovery 2024 R1
+ Fluids 2024 R1
+ CFD-Post only 2024 R1
+ SpaceClaim 2024 R1
+ CFX (includes CFD-Post) 2024 R1
+ FENSAP-ICE 2024 R1
+ Fluent (includes CFD-Post) 2024 R1
+ Polyflow (includes CFD-Post) 2024 R1
+ Forte (includes EnSight) 2024 R1
+ TurboGrid 2024 R1
+ ACIS Geometry Interface 2024 R1
+ AutoCAD Geometry Interface 2024 R1
+ Catia, Version 4 Geometry Interface 2024 R1
+ Catia, Version 5 Geometry Interface 2024 R1
+ Catia, Version 6 Geometry Interface 2024 R1
+ Creo Elements/Direct Modeling Geometry Interface 2024 R1
+ Creo Parametric Geometry Interface 2024 R1
+ Inventor Geometry Interface 2024 R1
+ JTOpen Geometry Interface 2024 R1
+ NX Geometry Interface 2024 R1
+ Parasolid Geometry Interface  2024 R1
+ Solid Edge Geometry Interface 2024 R1
+ SOLIDWORKS Geometry Interface 2024 R1
+ Remote Solve Manager Standalone Services 2024 R1
+ Customization Files for User Programmable Features 2024 R1
+ Mechanical Products 2024 R1
+ -----------------------------------------
+
+
+           *** WARNING *** from [CRE_OPMOD]
+          Operation mode already defined, OPMOD block ignored.
+ 
+ 
+ 
+ **************************************
+ *                                    *
+ *   CFDENTERPRISE License required   *
+ *                                    *
+ **************************************
+ 
+
+
+
+ **************************
+ *                        *
+ *      ACCELERATORS      *
+ *                        *
+ **************************
+
+
+  -  Topo running with 4 background threads.
+
+
+
+
+ *************************
+ *                       *
+ *         TOPO          *
+ *                       *
+ *************************
+
+
+ Mesh units : meter
+
+
+ root mesh.
+                  Space Dim.    : 3
+                  Num. of bricks: 620980
+                  Num. of faces : 1866374
+                  Num. of segm. : 1867293
+                  Num. of nodes : 621899
+
+
+
+
+ *************************
+ *                       *
+ *       PROBLEMS        *
+ *                       *
+ *************************
+
+
+ Navier-Stokes 3D
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : INSIDE#1        
+                            INSIDE#2        
+                            INSIDE#3        
+                            INSIDE#4        
+                            INSIDE#5        
+                            INSIDE#6        
+                            INSIDE#7        
+                            INSIDE#8        
+                            INSIDE#9        
+                            INSIDE10        
+                            INSIDE11        
+                            INSIDE12        
+            Output Fields : VELOCITIES      
+                            TEMPERATURE     
+                            PRESSURE        
+                            H for upwind    
+
+       Navier-Stokes 3D
+       non isothermal flow problem
+       generalized newtonian fluid
+
+       no streamline upwinding in momentum equation
+       streamline upwinding in energy equation
+       Picard iteration for viscosity law
+
+       compressibility taken into account :
+         relative compressibility factor : cmpfac  =  1.00000E-02
+
+       viscosity function : visc = F(g) . H(T)
+
+       shear-rate dependence of the viscosity  : F(g)
+         viscosity law : Bird Carreau :
+         F(g) = facinf + (fac-facinf) * (1 +tnat*tnat *g*g)**((expo-1)/2)
+           fac    =  4.77838E+04 ,  facinf  =  5.48000E-05
+           tnat   =  4.82760E+00 ,  expo    =  3.18000E-01
+
+       temperature dependence of the viscosity : H(T)
+         temperature independent viscosity
+         H(T) =  1.
+
+       specific mass : ro     =  1.00000E+03
+       gravity field neglected 
+       inertia terms neglected in momentum equation
+
+       coefficients of conductivity law :
+         condu = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  2.00000E-01
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       coefficients of heat capacity law :
+         Cp = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  2.00000E+03
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       buoyancy force (Boussinesq approximation) :
+         coefficient of volumetric expansion : beta   =  0.00000E+00
+         reference temperature for density   : tbeta  =  0.00000E+00
+
+       viscous heating taken into account :
+         scaling factor : scalfc  =  1.00000E+00
+
+
+ Neumann for 3D
+            Support       : (DOMAIN*OUTLET).
+            Coordinates   : COORDINATES     
+            Input Fields  : F N/S           
+            Output Fields : VELOCITIES      
+
+       natural boundary conditions 3D
+
+       Force density imposed 
+           -expressed in a Cartesian reference frame-
+
+
+ Cartesian Veloc.
+            Support       : (DOMAIN*W_1).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : CART_VELOCITIES 
+
+       Evaluation of cartesian velocities
+           -on the basis of a translation and a rotation-
+
+       No rigid translation is defined.
+
+       Rigid rotation is given by :
+           the angular velocity omega  = -1.57080E+01 ,
+           around the axis defined by the points
+                (  0.00000E+00 )           (  0.00000E+00 )
+           P1 = ( -4.24940E-02 )  and P2 = ( -4.24940E-02 )
+                (  0.00000E+00 )           (  1.00000E+00 )
+
+
+ Cartesian Veloc.
+            Support       : (DOMAIN*W_10).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : CART_VELOCITIES 
+
+       Evaluation of cartesian velocities
+           -on the basis of a translation and a rotation-
+
+       No rigid translation is defined.
+
+       Rigid rotation is given by :
+           the angular velocity omega  = -1.57080E+01 ,
+           around the axis defined by the points
+                ( -4.26940E-02 )           ( -4.26940E-02 )
+           P1 = (  0.00000E+00 )  and P2 = (  0.00000E+00 )
+                (  0.00000E+00 )           (  1.00000E+00 )
+
+
+ Cartesian Veloc.
+            Support       : (DOMAIN*W_11).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : CART_VELOCITIES 
+
+       Evaluation of cartesian velocities
+           -on the basis of a translation and a rotation-
+
+       No rigid translation is defined.
+
+       Rigid rotation is given by :
+           the angular velocity omega  = -1.57080E+01 ,
+           around the axis defined by the points
+                ( -3.69740E-02 )           ( -3.69740E-02 )
+           P1 = ( -2.12470E-02 )  and P2 = ( -2.12470E-02 )
+                (  0.00000E+00 )           (  1.00000E+00 )
+
+
+ Cartesian Veloc.
+            Support       : (DOMAIN*W_12).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : CART_VELOCITIES 
+
+       Evaluation of cartesian velocities
+           -on the basis of a translation and a rotation-
+
+       No rigid translation is defined.
+
+       Rigid rotation is given by :
+           the angular velocity omega  = -1.57080E+01 ,
+           around the axis defined by the points
+                ( -2.13470E-02 )           ( -2.13470E-02 )
+           P1 = ( -3.68010E-02 )  and P2 = ( -3.68010E-02 )
+                (  0.00000E+00 )           (  1.00000E+00 )
+
+
+ Cartesian Veloc.
+            Support       : (DOMAIN*W_2).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : CART_VELOCITIES 
+
+       Evaluation of cartesian velocities
+           -on the basis of a translation and a rotation-
+
+       No rigid translation is defined.
+
+       Rigid rotation is given by :
+           the angular velocity omega  = -1.57080E+01 ,
+           around the axis defined by the points
+                (  2.13470E-02 )           (  2.13470E-02 )
+           P1 = ( -3.68010E-02 )  and P2 = ( -3.68010E-02 )
+                (  0.00000E+00 )           (  1.00000E+00 )
+
+
+ Cartesian Veloc.
+            Support       : (DOMAIN*W_3).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : CART_VELOCITIES 
+
+       Evaluation of cartesian velocities
+           -on the basis of a translation and a rotation-
+
+       No rigid translation is defined.
+
+       Rigid rotation is given by :
+           the angular velocity omega  = -1.57080E+01 ,
+           around the axis defined by the points
+                (  3.69740E-02 )           (  3.69740E-02 )
+           P1 = ( -2.12470E-02 )  and P2 = ( -2.12470E-02 )
+                (  0.00000E+00 )           (  1.00000E+00 )
+
+
+ Cartesian Veloc.
+            Support       : (DOMAIN*W_4).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : CART_VELOCITIES 
+
+       Evaluation of cartesian velocities
+           -on the basis of a translation and a rotation-
+
+       No rigid translation is defined.
+
+       Rigid rotation is given by :
+           the angular velocity omega  = -1.57080E+01 ,
+           around the axis defined by the points
+                (  4.26940E-02 )           (  4.26940E-02 )
+           P1 = (  0.00000E+00 )  and P2 = (  0.00000E+00 )
+                (  0.00000E+00 )           (  1.00000E+00 )
+
+
+ Cartesian Veloc.
+            Support       : (DOMAIN*W_5).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : CART_VELOCITIES 
+
+       Evaluation of cartesian velocities
+           -on the basis of a translation and a rotation-
+
+       No rigid translation is defined.
+
+       Rigid rotation is given by :
+           the angular velocity omega  = -1.57080E+01 ,
+           around the axis defined by the points
+                (  3.69740E-02 )           (  3.69740E-02 )
+           P1 = (  2.12470E-02 )  and P2 = (  2.12470E-02 )
+                (  0.00000E+00 )           (  1.00000E+00 )
+
+
+ Cartesian Veloc.
+            Support       : (DOMAIN*W_6).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : CART_VELOCITIES 
+
+       Evaluation of cartesian velocities
+           -on the basis of a translation and a rotation-
+
+       No rigid translation is defined.
+
+       Rigid rotation is given by :
+           the angular velocity omega  = -1.57080E+01 ,
+           around the axis defined by the points
+                (  2.13470E-02 )           (  2.13470E-02 )
+           P1 = (  3.68010E-02 )  and P2 = (  3.68010E-02 )
+                (  0.00000E+00 )           (  1.00000E+00 )
+
+
+ Cartesian Veloc.
+            Support       : (DOMAIN*W_7).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : CART_VELOCITIES 
+
+       Evaluation of cartesian velocities
+           -on the basis of a translation and a rotation-
+
+       No rigid translation is defined.
+
+       Rigid rotation is given by :
+           the angular velocity omega  = -1.57080E+01 ,
+           around the axis defined by the points
+                (  0.00000E+00 )           (  0.00000E+00 )
+           P1 = (  4.24940E-02 )  and P2 = (  4.24940E-02 )
+                (  0.00000E+00 )           (  1.00000E+00 )
+
+
+ Cartesian Veloc.
+            Support       : (DOMAIN*W_8).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : CART_VELOCITIES 
+
+       Evaluation of cartesian velocities
+           -on the basis of a translation and a rotation-
+
+       No rigid translation is defined.
+
+       Rigid rotation is given by :
+           the angular velocity omega  = -1.57080E+01 ,
+           around the axis defined by the points
+                ( -2.13470E-02 )           ( -2.13470E-02 )
+           P1 = (  3.68010E-02 )  and P2 = (  3.68010E-02 )
+                (  0.00000E+00 )           (  1.00000E+00 )
+
+
+ Cartesian Veloc.
+            Support       : (DOMAIN*W_9).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : CART_VELOCITIES 
+
+       Evaluation of cartesian velocities
+           -on the basis of a translation and a rotation-
+
+       No rigid translation is defined.
+
+       Rigid rotation is given by :
+           the angular velocity omega  = -1.57080E+01 ,
+           around the axis defined by the points
+                ( -3.69740E-02 )           ( -3.69740E-02 )
+           P1 = (  2.12470E-02 )  and P2 = (  2.12470E-02 )
+                (  0.00000E+00 )           (  1.00000E+00 )
+
+
+ Inc. Fluid Temp.
+            Support       : (DOMAIN*INLET).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : TEMPERATURE     
+                            VELOCITIES      
+
+       Incoming Fluid Temperature Imposed
+       plane geometry
+
+       imposed temperature =  3.73150E+02 (on incoming fluid region)
+
+       penalty coefficient =  1.00000E+06
+
+       min normal velocity =  1.00000E-03
+
+
+ Inc. Fluid Temp.
+            Support       : (DOMAIN*OUTLET).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : TEMPERATURE     
+                            VELOCITIES      
+
+       Incoming Fluid Temperature Imposed
+       plane geometry
+
+       imposed temperature =  3.73150E+02 (on incoming fluid region)
+
+       penalty coefficient =  1.00000E+03
+
+       min normal velocity =  1.00000E-03
+
+
+ Inside problem
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : INSIDE#1        
+ 
+                  Moving part : SCREW_1.
+ 
+                  Coordinates : COORDINATES     
+ 
+                  if sub-element is overlapped by the moving part
+                  then inside field on a sub-element = 1,
+                  otherwise inside field on a sub-element = 0
+ 
+                  Nb. pixels =      5
+                  Epsilon    =  0.1000000E-01
+                  Reuse inside field evaluated at step #1? YES 
+ 
+                  Computation of volume occupied by the fluid ? NO
+
+
+ Heat in mov.part
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : INSIDE#1        
+            Output Fields : VELOCITIES      
+                            TEMPERATURE     
+                            PRESSURE        
+                            H for upwind    
+
+       Navier-Stokes 3D
+       non isothermal flow problem
+       generalized newtonian fluid
+
+       no streamline upwinding in momentum equation
+       streamline upwinding in energy equation
+       Picard iteration for viscosity law
+
+       compressibility neglected
+
+       viscosity function : visc = F(g) . H(T)
+
+       shear-rate dependence of the viscosity  : F(g)
+         viscosity law : Bird Carreau :
+         F(g) = facinf + (fac-facinf) * (1 +tnat*tnat *g*g)**((expo-1)/2)
+           fac    =  4.77838E+04 ,  facinf  =  5.48000E-05
+           tnat   =  4.82760E+00 ,  expo    =  3.18000E-01
+
+       temperature dependence of the viscosity : H(T)
+         temperature independent viscosity
+         H(T) =  1.
+
+       specific mass : ro     =  7.80000E+03
+       gravity field neglected 
+       inertia terms neglected in momentum equation
+
+       coefficients of conductivity law :
+         condu = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+01
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       coefficients of heat capacity law :
+         Cp = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+02
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       buoyancy force (Boussinesq approximation) :
+         coefficient of volumetric expansion : beta   =  0.00000E+00
+         reference temperature for density   : tbeta  =  0.00000E+00
+
+       viscous heating neglected
+
+
+ Dumping Tp
+            Support       : SCREW_1.
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : TEMPERATURE     
+
+
+ Inside problem
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : INSIDE#2        
+ 
+                  Moving part : SCREW_2.
+ 
+                  Coordinates : COORDINATES     
+ 
+                  if sub-element is overlapped by the moving part
+                  then inside field on a sub-element = 1,
+                  otherwise inside field on a sub-element = 0
+ 
+                  Nb. pixels =      5
+                  Epsilon    =  0.1000000E-01
+                  Reuse inside field evaluated at step #1? YES 
+ 
+                  Computation of volume occupied by the fluid ? NO
+
+
+ Heat in mov.part
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : INSIDE#2        
+            Output Fields : VELOCITIES      
+                            TEMPERATURE     
+                            PRESSURE        
+                            H for upwind    
+
+       Navier-Stokes 3D
+       non isothermal flow problem
+       generalized newtonian fluid
+
+       no streamline upwinding in momentum equation
+       streamline upwinding in energy equation
+       Picard iteration for viscosity law
+
+       compressibility neglected
+
+       viscosity function : visc = F(g) . H(T)
+
+       shear-rate dependence of the viscosity  : F(g)
+         viscosity law : Bird Carreau :
+         F(g) = facinf + (fac-facinf) * (1 +tnat*tnat *g*g)**((expo-1)/2)
+           fac    =  4.77838E+04 ,  facinf  =  5.48000E-05
+           tnat   =  4.82760E+00 ,  expo    =  3.18000E-01
+
+       temperature dependence of the viscosity : H(T)
+         temperature independent viscosity
+         H(T) =  1.
+
+       specific mass : ro     =  7.80000E+03
+       gravity field neglected 
+       inertia terms neglected in momentum equation
+
+       coefficients of conductivity law :
+         condu = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+01
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       coefficients of heat capacity law :
+         Cp = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+02
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       buoyancy force (Boussinesq approximation) :
+         coefficient of volumetric expansion : beta   =  0.00000E+00
+         reference temperature for density   : tbeta  =  0.00000E+00
+
+       viscous heating neglected
+
+
+ Dumping Tp
+            Support       : SCREW_2.
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : TEMPERATURE     
+
+
+ Inside problem
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : INSIDE#3        
+ 
+                  Moving part : SCREW_3.
+ 
+                  Coordinates : COORDINATES     
+ 
+                  if sub-element is overlapped by the moving part
+                  then inside field on a sub-element = 1,
+                  otherwise inside field on a sub-element = 0
+ 
+                  Nb. pixels =      5
+                  Epsilon    =  0.1000000E-01
+                  Reuse inside field evaluated at step #1? YES 
+ 
+                  Computation of volume occupied by the fluid ? NO
+
+
+ Heat in mov.part
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : INSIDE#3        
+            Output Fields : VELOCITIES      
+                            TEMPERATURE     
+                            PRESSURE        
+                            H for upwind    
+
+       Navier-Stokes 3D
+       non isothermal flow problem
+       generalized newtonian fluid
+
+       no streamline upwinding in momentum equation
+       streamline upwinding in energy equation
+       Picard iteration for viscosity law
+
+       compressibility neglected
+
+       viscosity function : visc = F(g) . H(T)
+
+       shear-rate dependence of the viscosity  : F(g)
+         viscosity law : Bird Carreau :
+         F(g) = facinf + (fac-facinf) * (1 +tnat*tnat *g*g)**((expo-1)/2)
+           fac    =  4.77838E+04 ,  facinf  =  5.48000E-05
+           tnat   =  4.82760E+00 ,  expo    =  3.18000E-01
+
+       temperature dependence of the viscosity : H(T)
+         temperature independent viscosity
+         H(T) =  1.
+
+       specific mass : ro     =  7.80000E+03
+       gravity field neglected 
+       inertia terms neglected in momentum equation
+
+       coefficients of conductivity law :
+         condu = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+01
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       coefficients of heat capacity law :
+         Cp = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+02
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       buoyancy force (Boussinesq approximation) :
+         coefficient of volumetric expansion : beta   =  0.00000E+00
+         reference temperature for density   : tbeta  =  0.00000E+00
+
+       viscous heating neglected
+
+
+ Dumping Tp
+            Support       : SCREW_3.
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : TEMPERATURE     
+
+
+ Inside problem
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : INSIDE#4        
+ 
+                  Moving part : SCREW_4.
+ 
+                  Coordinates : COORDINATES     
+ 
+                  if sub-element is overlapped by the moving part
+                  then inside field on a sub-element = 1,
+                  otherwise inside field on a sub-element = 0
+ 
+                  Nb. pixels =      5
+                  Epsilon    =  0.1000000E-01
+                  Reuse inside field evaluated at step #1? YES 
+ 
+                  Computation of volume occupied by the fluid ? NO
+
+
+ Heat in mov.part
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : INSIDE#4        
+            Output Fields : VELOCITIES      
+                            TEMPERATURE     
+                            PRESSURE        
+                            H for upwind    
+
+       Navier-Stokes 3D
+       non isothermal flow problem
+       generalized newtonian fluid
+
+       no streamline upwinding in momentum equation
+       streamline upwinding in energy equation
+       Picard iteration for viscosity law
+
+       compressibility neglected
+
+       viscosity function : visc = F(g) . H(T)
+
+       shear-rate dependence of the viscosity  : F(g)
+         viscosity law : Bird Carreau :
+         F(g) = facinf + (fac-facinf) * (1 +tnat*tnat *g*g)**((expo-1)/2)
+           fac    =  4.77838E+04 ,  facinf  =  5.48000E-05
+           tnat   =  4.82760E+00 ,  expo    =  3.18000E-01
+
+       temperature dependence of the viscosity : H(T)
+         temperature independent viscosity
+         H(T) =  1.
+
+       specific mass : ro     =  7.80000E+03
+       gravity field neglected 
+       inertia terms neglected in momentum equation
+
+       coefficients of conductivity law :
+         condu = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+01
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       coefficients of heat capacity law :
+         Cp = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+02
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       buoyancy force (Boussinesq approximation) :
+         coefficient of volumetric expansion : beta   =  0.00000E+00
+         reference temperature for density   : tbeta  =  0.00000E+00
+
+       viscous heating neglected
+
+
+ Dumping Tp
+            Support       : SCREW_4.
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : TEMPERATURE     
+
+
+ Inside problem
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : INSIDE#5        
+ 
+                  Moving part : SCREW_5.
+ 
+                  Coordinates : COORDINATES     
+ 
+                  if sub-element is overlapped by the moving part
+                  then inside field on a sub-element = 1,
+                  otherwise inside field on a sub-element = 0
+ 
+                  Nb. pixels =      5
+                  Epsilon    =  0.1000000E-01
+                  Reuse inside field evaluated at step #1? YES 
+ 
+                  Computation of volume occupied by the fluid ? NO
+
+
+ Heat in mov.part
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : INSIDE#5        
+            Output Fields : VELOCITIES      
+                            TEMPERATURE     
+                            PRESSURE        
+                            H for upwind    
+
+       Navier-Stokes 3D
+       non isothermal flow problem
+       generalized newtonian fluid
+
+       no streamline upwinding in momentum equation
+       streamline upwinding in energy equation
+       Picard iteration for viscosity law
+
+       compressibility neglected
+
+       viscosity function : visc = F(g) . H(T)
+
+       shear-rate dependence of the viscosity  : F(g)
+         viscosity law : Bird Carreau :
+         F(g) = facinf + (fac-facinf) * (1 +tnat*tnat *g*g)**((expo-1)/2)
+           fac    =  4.77838E+04 ,  facinf  =  5.48000E-05
+           tnat   =  4.82760E+00 ,  expo    =  3.18000E-01
+
+       temperature dependence of the viscosity : H(T)
+         temperature independent viscosity
+         H(T) =  1.
+
+       specific mass : ro     =  7.80000E+03
+       gravity field neglected 
+       inertia terms neglected in momentum equation
+
+       coefficients of conductivity law :
+         condu = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+01
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       coefficients of heat capacity law :
+         Cp = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+02
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       buoyancy force (Boussinesq approximation) :
+         coefficient of volumetric expansion : beta   =  0.00000E+00
+         reference temperature for density   : tbeta  =  0.00000E+00
+
+       viscous heating neglected
+
+
+ Dumping Tp
+            Support       : SCREW_5.
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : TEMPERATURE     
+
+
+ Inside problem
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : INSIDE#6        
+ 
+                  Moving part : SCREW_6.
+ 
+                  Coordinates : COORDINATES     
+ 
+                  if sub-element is overlapped by the moving part
+                  then inside field on a sub-element = 1,
+                  otherwise inside field on a sub-element = 0
+ 
+                  Nb. pixels =      5
+                  Epsilon    =  0.1000000E-01
+                  Reuse inside field evaluated at step #1? YES 
+ 
+                  Computation of volume occupied by the fluid ? NO
+
+
+ Heat in mov.part
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : INSIDE#6        
+            Output Fields : VELOCITIES      
+                            TEMPERATURE     
+                            PRESSURE        
+                            H for upwind    
+
+       Navier-Stokes 3D
+       non isothermal flow problem
+       generalized newtonian fluid
+
+       no streamline upwinding in momentum equation
+       streamline upwinding in energy equation
+       Picard iteration for viscosity law
+
+       compressibility neglected
+
+       viscosity function : visc = F(g) . H(T)
+
+       shear-rate dependence of the viscosity  : F(g)
+         viscosity law : Bird Carreau :
+         F(g) = facinf + (fac-facinf) * (1 +tnat*tnat *g*g)**((expo-1)/2)
+           fac    =  4.77838E+04 ,  facinf  =  5.48000E-05
+           tnat   =  4.82760E+00 ,  expo    =  3.18000E-01
+
+       temperature dependence of the viscosity : H(T)
+         temperature independent viscosity
+         H(T) =  1.
+
+       specific mass : ro     =  7.80000E+03
+       gravity field neglected 
+       inertia terms neglected in momentum equation
+
+       coefficients of conductivity law :
+         condu = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+01
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       coefficients of heat capacity law :
+         Cp = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+02
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       buoyancy force (Boussinesq approximation) :
+         coefficient of volumetric expansion : beta   =  0.00000E+00
+         reference temperature for density   : tbeta  =  0.00000E+00
+
+       viscous heating neglected
+
+
+ Dumping Tp
+            Support       : SCREW_6.
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : TEMPERATURE     
+
+
+ Inside problem
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : INSIDE#7        
+ 
+                  Moving part : SCREW_7.
+ 
+                  Coordinates : COORDINATES     
+ 
+                  if sub-element is overlapped by the moving part
+                  then inside field on a sub-element = 1,
+                  otherwise inside field on a sub-element = 0
+ 
+                  Nb. pixels =      5
+                  Epsilon    =  0.1000000E-01
+                  Reuse inside field evaluated at step #1? YES 
+ 
+                  Computation of volume occupied by the fluid ? NO
+
+
+ Heat in mov.part
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : INSIDE#7        
+            Output Fields : VELOCITIES      
+                            TEMPERATURE     
+                            PRESSURE        
+                            H for upwind    
+
+       Navier-Stokes 3D
+       non isothermal flow problem
+       generalized newtonian fluid
+
+       no streamline upwinding in momentum equation
+       streamline upwinding in energy equation
+       Picard iteration for viscosity law
+
+       compressibility neglected
+
+       viscosity function : visc = F(g) . H(T)
+
+       shear-rate dependence of the viscosity  : F(g)
+         viscosity law : Bird Carreau :
+         F(g) = facinf + (fac-facinf) * (1 +tnat*tnat *g*g)**((expo-1)/2)
+           fac    =  4.77838E+04 ,  facinf  =  5.48000E-05
+           tnat   =  4.82760E+00 ,  expo    =  3.18000E-01
+
+       temperature dependence of the viscosity : H(T)
+         temperature independent viscosity
+         H(T) =  1.
+
+       specific mass : ro     =  7.80000E+03
+       gravity field neglected 
+       inertia terms neglected in momentum equation
+
+       coefficients of conductivity law :
+         condu = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+01
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       coefficients of heat capacity law :
+         Cp = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+02
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       buoyancy force (Boussinesq approximation) :
+         coefficient of volumetric expansion : beta   =  0.00000E+00
+         reference temperature for density   : tbeta  =  0.00000E+00
+
+       viscous heating neglected
+
+
+ Dumping Tp
+            Support       : SCREW_7.
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : TEMPERATURE     
+
+
+ Inside problem
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : INSIDE#8        
+ 
+                  Moving part : SCREW_8.
+ 
+                  Coordinates : COORDINATES     
+ 
+                  if sub-element is overlapped by the moving part
+                  then inside field on a sub-element = 1,
+                  otherwise inside field on a sub-element = 0
+ 
+                  Nb. pixels =      5
+                  Epsilon    =  0.1000000E-01
+                  Reuse inside field evaluated at step #1? YES 
+ 
+                  Computation of volume occupied by the fluid ? NO
+
+
+ Heat in mov.part
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : INSIDE#8        
+            Output Fields : VELOCITIES      
+                            TEMPERATURE     
+                            PRESSURE        
+                            H for upwind    
+
+       Navier-Stokes 3D
+       non isothermal flow problem
+       generalized newtonian fluid
+
+       no streamline upwinding in momentum equation
+       streamline upwinding in energy equation
+       Picard iteration for viscosity law
+
+       compressibility neglected
+
+       viscosity function : visc = F(g) . H(T)
+
+       shear-rate dependence of the viscosity  : F(g)
+         viscosity law : Bird Carreau :
+         F(g) = facinf + (fac-facinf) * (1 +tnat*tnat *g*g)**((expo-1)/2)
+           fac    =  4.77838E+04 ,  facinf  =  5.48000E-05
+           tnat   =  4.82760E+00 ,  expo    =  3.18000E-01
+
+       temperature dependence of the viscosity : H(T)
+         temperature independent viscosity
+         H(T) =  1.
+
+       specific mass : ro     =  7.80000E+03
+       gravity field neglected 
+       inertia terms neglected in momentum equation
+
+       coefficients of conductivity law :
+         condu = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+01
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       coefficients of heat capacity law :
+         Cp = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+02
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       buoyancy force (Boussinesq approximation) :
+         coefficient of volumetric expansion : beta   =  0.00000E+00
+         reference temperature for density   : tbeta  =  0.00000E+00
+
+       viscous heating neglected
+
+
+ Dumping Tp
+            Support       : SCREW_8.
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : TEMPERATURE     
+
+
+ Inside problem
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : INSIDE#9        
+ 
+                  Moving part : SCREW_9.
+ 
+                  Coordinates : COORDINATES     
+ 
+                  if sub-element is overlapped by the moving part
+                  then inside field on a sub-element = 1,
+                  otherwise inside field on a sub-element = 0
+ 
+                  Nb. pixels =      5
+                  Epsilon    =  0.1000000E-01
+                  Reuse inside field evaluated at step #1? YES 
+ 
+                  Computation of volume occupied by the fluid ? NO
+
+
+ Heat in mov.part
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : INSIDE#9        
+            Output Fields : VELOCITIES      
+                            TEMPERATURE     
+                            PRESSURE        
+                            H for upwind    
+
+       Navier-Stokes 3D
+       non isothermal flow problem
+       generalized newtonian fluid
+
+       no streamline upwinding in momentum equation
+       streamline upwinding in energy equation
+       Picard iteration for viscosity law
+
+       compressibility neglected
+
+       viscosity function : visc = F(g) . H(T)
+
+       shear-rate dependence of the viscosity  : F(g)
+         viscosity law : Bird Carreau :
+         F(g) = facinf + (fac-facinf) * (1 +tnat*tnat *g*g)**((expo-1)/2)
+           fac    =  4.77838E+04 ,  facinf  =  5.48000E-05
+           tnat   =  4.82760E+00 ,  expo    =  3.18000E-01
+
+       temperature dependence of the viscosity : H(T)
+         temperature independent viscosity
+         H(T) =  1.
+
+       specific mass : ro     =  7.80000E+03
+       gravity field neglected 
+       inertia terms neglected in momentum equation
+
+       coefficients of conductivity law :
+         condu = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+01
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       coefficients of heat capacity law :
+         Cp = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+02
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       buoyancy force (Boussinesq approximation) :
+         coefficient of volumetric expansion : beta   =  0.00000E+00
+         reference temperature for density   : tbeta  =  0.00000E+00
+
+       viscous heating neglected
+
+
+ Dumping Tp
+            Support       : SCREW_9.
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : TEMPERATURE     
+
+
+ Inside problem
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : INSIDE10        
+ 
+                  Moving part : SCREW_10.
+ 
+                  Coordinates : COORDINATES     
+ 
+                  if sub-element is overlapped by the moving part
+                  then inside field on a sub-element = 1,
+                  otherwise inside field on a sub-element = 0
+ 
+                  Nb. pixels =      5
+                  Epsilon    =  0.1000000E-01
+                  Reuse inside field evaluated at step #1? YES 
+ 
+                  Computation of volume occupied by the fluid ? NO
+
+
+ Heat in mov.part
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : INSIDE10        
+            Output Fields : VELOCITIES      
+                            TEMPERATURE     
+                            PRESSURE        
+                            H for upwind    
+
+       Navier-Stokes 3D
+       non isothermal flow problem
+       generalized newtonian fluid
+
+       no streamline upwinding in momentum equation
+       streamline upwinding in energy equation
+       Picard iteration for viscosity law
+
+       compressibility neglected
+
+       viscosity function : visc = F(g) . H(T)
+
+       shear-rate dependence of the viscosity  : F(g)
+         viscosity law : Bird Carreau :
+         F(g) = facinf + (fac-facinf) * (1 +tnat*tnat *g*g)**((expo-1)/2)
+           fac    =  4.77838E+04 ,  facinf  =  5.48000E-05
+           tnat   =  4.82760E+00 ,  expo    =  3.18000E-01
+
+       temperature dependence of the viscosity : H(T)
+         temperature independent viscosity
+         H(T) =  1.
+
+       specific mass : ro     =  7.80000E+03
+       gravity field neglected 
+       inertia terms neglected in momentum equation
+
+       coefficients of conductivity law :
+         condu = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+01
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       coefficients of heat capacity law :
+         Cp = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+02
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       buoyancy force (Boussinesq approximation) :
+         coefficient of volumetric expansion : beta   =  0.00000E+00
+         reference temperature for density   : tbeta  =  0.00000E+00
+
+       viscous heating neglected
+
+
+ Dumping Tp
+            Support       : SCREW_10.
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : TEMPERATURE     
+
+
+ Inside problem
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : INSIDE11        
+ 
+                  Moving part : SCREW_11.
+ 
+                  Coordinates : COORDINATES     
+ 
+                  if sub-element is overlapped by the moving part
+                  then inside field on a sub-element = 1,
+                  otherwise inside field on a sub-element = 0
+ 
+                  Nb. pixels =      5
+                  Epsilon    =  0.1000000E-01
+                  Reuse inside field evaluated at step #1? YES 
+ 
+                  Computation of volume occupied by the fluid ? NO
+
+
+ Heat in mov.part
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : INSIDE11        
+            Output Fields : VELOCITIES      
+                            TEMPERATURE     
+                            PRESSURE        
+                            H for upwind    
+
+       Navier-Stokes 3D
+       non isothermal flow problem
+       generalized newtonian fluid
+
+       no streamline upwinding in momentum equation
+       streamline upwinding in energy equation
+       Picard iteration for viscosity law
+
+       compressibility neglected
+
+       viscosity function : visc = F(g) . H(T)
+
+       shear-rate dependence of the viscosity  : F(g)
+         viscosity law : Bird Carreau :
+         F(g) = facinf + (fac-facinf) * (1 +tnat*tnat *g*g)**((expo-1)/2)
+           fac    =  4.77838E+04 ,  facinf  =  5.48000E-05
+           tnat   =  4.82760E+00 ,  expo    =  3.18000E-01
+
+       temperature dependence of the viscosity : H(T)
+         temperature independent viscosity
+         H(T) =  1.
+
+       specific mass : ro     =  7.80000E+03
+       gravity field neglected 
+       inertia terms neglected in momentum equation
+
+       coefficients of conductivity law :
+         condu = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+01
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       coefficients of heat capacity law :
+         Cp = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+02
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       buoyancy force (Boussinesq approximation) :
+         coefficient of volumetric expansion : beta   =  0.00000E+00
+         reference temperature for density   : tbeta  =  0.00000E+00
+
+       viscous heating neglected
+
+
+ Dumping Tp
+            Support       : SCREW_11.
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : TEMPERATURE     
+
+
+ Inside problem
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : INSIDE12        
+ 
+                  Moving part : SCREW_12.
+ 
+                  Coordinates : COORDINATES     
+ 
+                  if sub-element is overlapped by the moving part
+                  then inside field on a sub-element = 1,
+                  otherwise inside field on a sub-element = 0
+ 
+                  Nb. pixels =      5
+                  Epsilon    =  0.1000000E-01
+                  Reuse inside field evaluated at step #1? YES 
+ 
+                  Computation of volume occupied by the fluid ? NO
+
+
+ Heat in mov.part
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : INSIDE12        
+            Output Fields : VELOCITIES      
+                            TEMPERATURE     
+                            PRESSURE        
+                            H for upwind    
+
+       Navier-Stokes 3D
+       non isothermal flow problem
+       generalized newtonian fluid
+
+       no streamline upwinding in momentum equation
+       streamline upwinding in energy equation
+       Picard iteration for viscosity law
+
+       compressibility neglected
+
+       viscosity function : visc = F(g) . H(T)
+
+       shear-rate dependence of the viscosity  : F(g)
+         viscosity law : Bird Carreau :
+         F(g) = facinf + (fac-facinf) * (1 +tnat*tnat *g*g)**((expo-1)/2)
+           fac    =  4.77838E+04 ,  facinf  =  5.48000E-05
+           tnat   =  4.82760E+00 ,  expo    =  3.18000E-01
+
+       temperature dependence of the viscosity : H(T)
+         temperature independent viscosity
+         H(T) =  1.
+
+       specific mass : ro     =  7.80000E+03
+       gravity field neglected 
+       inertia terms neglected in momentum equation
+
+       coefficients of conductivity law :
+         condu = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+01
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       coefficients of heat capacity law :
+         Cp = a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3
+            a  =  4.00000E+02
+            b  =  0.00000E+00
+            c  =  0.00000E+00
+            d  =  0.00000E+00
+            t0 =  0.00000E+00
+
+       buoyancy force (Boussinesq approximation) :
+         coefficient of volumetric expansion : beta   =  0.00000E+00
+         reference temperature for density   : tbeta  =  0.00000E+00
+
+       viscous heating neglected
+
+
+ Dumping Tp
+            Support       : SCREW_12.
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : TEMPERATURE     
+
+
+ Viscous heating
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+                            INSIDE#1        
+                            INSIDE#2        
+                            INSIDE#3        
+                            INSIDE#4        
+                            INSIDE#5        
+                            INSIDE#6        
+                            INSIDE#7        
+                            INSIDE#8        
+                            INSIDE#9        
+                            INSIDE10        
+                            INSIDE11        
+                            INSIDE12        
+            Output Fields : VISCOUS HEATING 
+
+       algebraic post-processor 3D
+       the mean least square technique is applied for computing
+       the viscous heating T:d
+
+       viscosity function : visc = F(g) . H(T)
+
+       shear-rate dependence of the viscosity  : F(g)
+         viscosity law : Bird Carreau :
+         F(g) = facinf + (fac-facinf) * (1 +tnat*tnat *g*g)**((expo-1)/2)
+           fac    =  4.77838E+04 ,  facinf  =  5.48000E-05
+           tnat   =  4.82760E+00 ,  expo    =  3.18000E-01
+
+       temperature dependence of the viscosity : H(T)
+         temperature independent viscosity
+         H(T) =  1.
+
+       scaling factor : scalfc  =  1.00000E+00
+
+
+ Dissipated power
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+                            INSIDE#1        
+                            INSIDE#2        
+                            INSIDE#3        
+                            INSIDE#4        
+                            INSIDE#5        
+                            INSIDE#6        
+                            INSIDE#7        
+                            INSIDE#8        
+                            INSIDE#9        
+                            INSIDE10        
+                            INSIDE11        
+                            INSIDE12        
+            Output Fields : Dissip_Power    
+
+       algebraic post-processor 3D
+       the mean least square technique is applied for computing
+       the total power consumption
+
+
+ Shear rate
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            INSIDE#1        
+                            INSIDE#2        
+                            INSIDE#3        
+                            INSIDE#4        
+                            INSIDE#5        
+                            INSIDE#6        
+                            INSIDE#7        
+                            INSIDE#8        
+                            INSIDE#9        
+                            INSIDE10        
+                            INSIDE11        
+                            INSIDE12        
+            Output Fields : LOCAL SHEAR-RATE
+
+       algebraic post-processor 3D
+       the mean least square technique is applied for computing
+       the local shear rate 'gamma-dot'
+
+
+ Volume of liquid
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : -               
+            Output Fields : INSIDE_TOTAL    
+                            VOLUME_OF_LIQUID
+ 
+                  Moving part : (SCREW_1+SCREW_10+SCREW_11+SCREW_12+SCREW_2~_4+SCREW_5+SCREW_6+SCREW_7+SCREW_8+SCREW_9).
+ 
+                  Coordinates : COORDINATES     
+ 
+                  inside field on a sub-element = fraction
+                  of the sub-element overlapped by the moving part
+ 
+                  Nb. pixels =      5
+                  Epsilon    =  0.1000000E-01
+                  Reuse inside field evaluated at step #1? YES 
+ 
+                  Computation of volume occupied by the fluid ? YES
+
+
+ Flow Rate
+            Support       : (DOMAIN*INLET).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+            Output Fields : FLOW_RATE       
+ 
+            EQUATION(S)         :       vgn_equal 
+                                :        integ_vx 
+            IsAVariableRequired :             Yes 
+            FEIntegrationRule   :               5 
+            Coordinates system  :       CARTESIAN 
+            Function_Type       :         VNormal 
+            Variable            :        Velocity 
+
+
+ Flow Rate
+            Support       : (DOMAIN*OUTLET).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+            Output Fields : FLOW_RATE       
+ 
+            EQUATION(S)         :       vgn_equal 
+                                :        integ_vx 
+            IsAVariableRequired :             Yes 
+            FEIntegrationRule   :               5 
+            Coordinates system  :       CARTESIAN 
+            Function_Type       :         VNormal 
+            Variable            :        Velocity 
+
+
+ Flow Rate
+            Support       : (DOMAIN*WO).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+            Output Fields : FLOW_RATE       
+ 
+            EQUATION(S)         :       vgn_equal 
+                                :        integ_vx 
+            IsAVariableRequired :             Yes 
+            FEIntegrationRule   :               5 
+            Coordinates system  :       CARTESIAN 
+            Function_Type       :         VNormal 
+            Variable            :        Velocity 
+
+
+ Flow Rate
+            Support       : (DOMAIN*W_1).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+            Output Fields : FLOW_RATE       
+ 
+            EQUATION(S)         :       vgn_equal 
+                                :        integ_vx 
+            IsAVariableRequired :             Yes 
+            FEIntegrationRule   :               5 
+            Coordinates system  :       CARTESIAN 
+            Function_Type       :         VNormal 
+            Variable            :        Velocity 
+
+
+ Flow Rate
+            Support       : (DOMAIN*W_10).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+            Output Fields : FLOW_RATE       
+ 
+            EQUATION(S)         :       vgn_equal 
+                                :        integ_vx 
+            IsAVariableRequired :             Yes 
+            FEIntegrationRule   :               5 
+            Coordinates system  :       CARTESIAN 
+            Function_Type       :         VNormal 
+            Variable            :        Velocity 
+
+
+ Flow Rate
+            Support       : (DOMAIN*W_11).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+            Output Fields : FLOW_RATE       
+ 
+            EQUATION(S)         :       vgn_equal 
+                                :        integ_vx 
+            IsAVariableRequired :             Yes 
+            FEIntegrationRule   :               5 
+            Coordinates system  :       CARTESIAN 
+            Function_Type       :         VNormal 
+            Variable            :        Velocity 
+
+
+ Flow Rate
+            Support       : (DOMAIN*W_12).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+            Output Fields : FLOW_RATE       
+ 
+            EQUATION(S)         :       vgn_equal 
+                                :        integ_vx 
+            IsAVariableRequired :             Yes 
+            FEIntegrationRule   :               5 
+            Coordinates system  :       CARTESIAN 
+            Function_Type       :         VNormal 
+            Variable            :        Velocity 
+
+
+ Flow Rate
+            Support       : (DOMAIN*W_2).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+            Output Fields : FLOW_RATE       
+ 
+            EQUATION(S)         :       vgn_equal 
+                                :        integ_vx 
+            IsAVariableRequired :             Yes 
+            FEIntegrationRule   :               5 
+            Coordinates system  :       CARTESIAN 
+            Function_Type       :         VNormal 
+            Variable            :        Velocity 
+
+
+ Flow Rate
+            Support       : (DOMAIN*W_3).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+            Output Fields : FLOW_RATE       
+ 
+            EQUATION(S)         :       vgn_equal 
+                                :        integ_vx 
+            IsAVariableRequired :             Yes 
+            FEIntegrationRule   :               5 
+            Coordinates system  :       CARTESIAN 
+            Function_Type       :         VNormal 
+            Variable            :        Velocity 
+
+
+ Flow Rate
+            Support       : (DOMAIN*W_4).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+            Output Fields : FLOW_RATE       
+ 
+            EQUATION(S)         :       vgn_equal 
+                                :        integ_vx 
+            IsAVariableRequired :             Yes 
+            FEIntegrationRule   :               5 
+            Coordinates system  :       CARTESIAN 
+            Function_Type       :         VNormal 
+            Variable            :        Velocity 
+
+
+ Flow Rate
+            Support       : (DOMAIN*W_5).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+            Output Fields : FLOW_RATE       
+ 
+            EQUATION(S)         :       vgn_equal 
+                                :        integ_vx 
+            IsAVariableRequired :             Yes 
+            FEIntegrationRule   :               5 
+            Coordinates system  :       CARTESIAN 
+            Function_Type       :         VNormal 
+            Variable            :        Velocity 
+
+
+ Flow Rate
+            Support       : (DOMAIN*W_6).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+            Output Fields : FLOW_RATE       
+ 
+            EQUATION(S)         :       vgn_equal 
+                                :        integ_vx 
+            IsAVariableRequired :             Yes 
+            FEIntegrationRule   :               5 
+            Coordinates system  :       CARTESIAN 
+            Function_Type       :         VNormal 
+            Variable            :        Velocity 
+
+
+ Flow Rate
+            Support       : (DOMAIN*W_7).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+            Output Fields : FLOW_RATE       
+ 
+            EQUATION(S)         :       vgn_equal 
+                                :        integ_vx 
+            IsAVariableRequired :             Yes 
+            FEIntegrationRule   :               5 
+            Coordinates system  :       CARTESIAN 
+            Function_Type       :         VNormal 
+            Variable            :        Velocity 
+
+
+ Flow Rate
+            Support       : (DOMAIN*W_8).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+            Output Fields : FLOW_RATE       
+ 
+            EQUATION(S)         :       vgn_equal 
+                                :        integ_vx 
+            IsAVariableRequired :             Yes 
+            FEIntegrationRule   :               5 
+            Coordinates system  :       CARTESIAN 
+            Function_Type       :         VNormal 
+            Variable            :        Velocity 
+
+
+ Flow Rate
+            Support       : (DOMAIN*W_9).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+            Output Fields : FLOW_RATE       
+ 
+            EQUATION(S)         :       vgn_equal 
+                                :        integ_vx 
+            IsAVariableRequired :             Yes 
+            FEIntegrationRule   :               5 
+            Coordinates system  :       CARTESIAN 
+            Function_Type       :         VNormal 
+            Variable            :        Velocity 
+
+
+ Viscosity
+            Support       : (DOMAIN).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+                            INSIDE#1        
+                            INSIDE#2        
+                            INSIDE#3        
+                            INSIDE#4        
+                            INSIDE#5        
+                            INSIDE#6        
+                            INSIDE#7        
+                            INSIDE#8        
+                            INSIDE#9        
+                            INSIDE10        
+                            INSIDE11        
+                            INSIDE12        
+            Output Fields : VISCOSITY       
+
+       algebraic post-processor 3D
+       the mean least square technique is applied for computing
+       the viscosity mu(IId,t)
+
+       viscosity function : visc = F(g) . H(T)
+
+       shear-rate dependence of the viscosity  : F(g)
+         viscosity law : Bird Carreau :
+         F(g) = facinf + (fac-facinf) * (1 +tnat*tnat *g*g)**((expo-1)/2)
+           fac    =  4.77838E+04 ,  facinf  =  5.48000E-05
+           tnat   =  4.82760E+00 ,  expo    =  3.18000E-01
+
+       temperature dependence of the viscosity : H(T)
+         temperature independent viscosity
+         H(T) =  1.
+
+
+ Convected Heat
+            Support       : (DOMAIN*INLET).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+            Output Fields : CONV_HEAT       
+
+       algebraic post-processor 2D and 2D 1/2
+       the mean least square technique is applied for computing
+       the convected heat flux defined as the integral
+        /
+        | ro Cp V (T-Tref) dS , where :
+        /
+         ro (specific mass) =  1.00000E+03 ,
+         Cp (heat capacity) = 
+         a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3, with
+            a =  2.00000E+03 ,   c =  0.00000E+00 ,
+            b =  0.00000E+00 ,   d =  0.00000E+00 , and
+           t0 =  0.00000E+00 ,
+         Tref (surrounding temperature) =  0.00000E+00
+
+       plane geometry
+
+
+ Convected Heat
+            Support       : (DOMAIN*OUTLET).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+            Output Fields : CONV_HEAT       
+
+       algebraic post-processor 2D and 2D 1/2
+       the mean least square technique is applied for computing
+       the convected heat flux defined as the integral
+        /
+        | ro Cp V (T-Tref) dS , where :
+        /
+         ro (specific mass) =  1.00000E+03 ,
+         Cp (heat capacity) = 
+         a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3, with
+            a =  2.00000E+03 ,   c =  0.00000E+00 ,
+            b =  0.00000E+00 ,   d =  0.00000E+00 , and
+           t0 =  0.00000E+00 ,
+         Tref (surrounding temperature) =  0.00000E+00
+
+       plane geometry
+
+
+ Convected Heat
+            Support       : (DOMAIN*WO).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+            Output Fields : CONV_HEAT       
+
+       algebraic post-processor 2D and 2D 1/2
+       the mean least square technique is applied for computing
+       the convected heat flux defined as the integral
+        /
+        | ro Cp V (T-Tref) dS , where :
+        /
+         ro (specific mass) =  1.00000E+03 ,
+         Cp (heat capacity) = 
+         a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3, with
+            a =  2.00000E+03 ,   c =  0.00000E+00 ,
+            b =  0.00000E+00 ,   d =  0.00000E+00 , and
+           t0 =  0.00000E+00 ,
+         Tref (surrounding temperature) =  0.00000E+00
+
+       plane geometry
+
+
+ Convected Heat
+            Support       : (DOMAIN*W_1).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+            Output Fields : CONV_HEAT       
+
+       algebraic post-processor 2D and 2D 1/2
+       the mean least square technique is applied for computing
+       the convected heat flux defined as the integral
+        /
+        | ro Cp V (T-Tref) dS , where :
+        /
+         ro (specific mass) =  1.00000E+03 ,
+         Cp (heat capacity) = 
+         a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3, with
+            a =  2.00000E+03 ,   c =  0.00000E+00 ,
+            b =  0.00000E+00 ,   d =  0.00000E+00 , and
+           t0 =  0.00000E+00 ,
+         Tref (surrounding temperature) =  0.00000E+00
+
+       plane geometry
+
+
+ Convected Heat
+            Support       : (DOMAIN*W_10).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+            Output Fields : CONV_HEAT       
+
+       algebraic post-processor 2D and 2D 1/2
+       the mean least square technique is applied for computing
+       the convected heat flux defined as the integral
+        /
+        | ro Cp V (T-Tref) dS , where :
+        /
+         ro (specific mass) =  1.00000E+03 ,
+         Cp (heat capacity) = 
+         a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3, with
+            a =  2.00000E+03 ,   c =  0.00000E+00 ,
+            b =  0.00000E+00 ,   d =  0.00000E+00 , and
+           t0 =  0.00000E+00 ,
+         Tref (surrounding temperature) =  0.00000E+00
+
+       plane geometry
+
+
+ Convected Heat
+            Support       : (DOMAIN*W_11).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+            Output Fields : CONV_HEAT       
+
+       algebraic post-processor 2D and 2D 1/2
+       the mean least square technique is applied for computing
+       the convected heat flux defined as the integral
+        /
+        | ro Cp V (T-Tref) dS , where :
+        /
+         ro (specific mass) =  1.00000E+03 ,
+         Cp (heat capacity) = 
+         a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3, with
+            a =  2.00000E+03 ,   c =  0.00000E+00 ,
+            b =  0.00000E+00 ,   d =  0.00000E+00 , and
+           t0 =  0.00000E+00 ,
+         Tref (surrounding temperature) =  0.00000E+00
+
+       plane geometry
+
+
+ Convected Heat
+            Support       : (DOMAIN*W_12).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+            Output Fields : CONV_HEAT       
+
+       algebraic post-processor 2D and 2D 1/2
+       the mean least square technique is applied for computing
+       the convected heat flux defined as the integral
+        /
+        | ro Cp V (T-Tref) dS , where :
+        /
+         ro (specific mass) =  1.00000E+03 ,
+         Cp (heat capacity) = 
+         a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3, with
+            a =  2.00000E+03 ,   c =  0.00000E+00 ,
+            b =  0.00000E+00 ,   d =  0.00000E+00 , and
+           t0 =  0.00000E+00 ,
+         Tref (surrounding temperature) =  0.00000E+00
+
+       plane geometry
+
+
+ Convected Heat
+            Support       : (DOMAIN*W_2).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+            Output Fields : CONV_HEAT       
+
+       algebraic post-processor 2D and 2D 1/2
+       the mean least square technique is applied for computing
+       the convected heat flux defined as the integral
+        /
+        | ro Cp V (T-Tref) dS , where :
+        /
+         ro (specific mass) =  1.00000E+03 ,
+         Cp (heat capacity) = 
+         a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3, with
+            a =  2.00000E+03 ,   c =  0.00000E+00 ,
+            b =  0.00000E+00 ,   d =  0.00000E+00 , and
+           t0 =  0.00000E+00 ,
+         Tref (surrounding temperature) =  0.00000E+00
+
+       plane geometry
+
+
+ Convected Heat
+            Support       : (DOMAIN*W_3).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+            Output Fields : CONV_HEAT       
+
+       algebraic post-processor 2D and 2D 1/2
+       the mean least square technique is applied for computing
+       the convected heat flux defined as the integral
+        /
+        | ro Cp V (T-Tref) dS , where :
+        /
+         ro (specific mass) =  1.00000E+03 ,
+         Cp (heat capacity) = 
+         a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3, with
+            a =  2.00000E+03 ,   c =  0.00000E+00 ,
+            b =  0.00000E+00 ,   d =  0.00000E+00 , and
+           t0 =  0.00000E+00 ,
+         Tref (surrounding temperature) =  0.00000E+00
+
+       plane geometry
+
+
+ Convected Heat
+            Support       : (DOMAIN*W_4).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+            Output Fields : CONV_HEAT       
+
+       algebraic post-processor 2D and 2D 1/2
+       the mean least square technique is applied for computing
+       the convected heat flux defined as the integral
+        /
+        | ro Cp V (T-Tref) dS , where :
+        /
+         ro (specific mass) =  1.00000E+03 ,
+         Cp (heat capacity) = 
+         a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3, with
+            a =  2.00000E+03 ,   c =  0.00000E+00 ,
+            b =  0.00000E+00 ,   d =  0.00000E+00 , and
+           t0 =  0.00000E+00 ,
+         Tref (surrounding temperature) =  0.00000E+00
+
+       plane geometry
+
+
+ Convected Heat
+            Support       : (DOMAIN*W_5).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+            Output Fields : CONV_HEAT       
+
+       algebraic post-processor 2D and 2D 1/2
+       the mean least square technique is applied for computing
+       the convected heat flux defined as the integral
+        /
+        | ro Cp V (T-Tref) dS , where :
+        /
+         ro (specific mass) =  1.00000E+03 ,
+         Cp (heat capacity) = 
+         a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3, with
+            a =  2.00000E+03 ,   c =  0.00000E+00 ,
+            b =  0.00000E+00 ,   d =  0.00000E+00 , and
+           t0 =  0.00000E+00 ,
+         Tref (surrounding temperature) =  0.00000E+00
+
+       plane geometry
+
+
+ Convected Heat
+            Support       : (DOMAIN*W_6).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+            Output Fields : CONV_HEAT       
+
+       algebraic post-processor 2D and 2D 1/2
+       the mean least square technique is applied for computing
+       the convected heat flux defined as the integral
+        /
+        | ro Cp V (T-Tref) dS , where :
+        /
+         ro (specific mass) =  1.00000E+03 ,
+         Cp (heat capacity) = 
+         a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3, with
+            a =  2.00000E+03 ,   c =  0.00000E+00 ,
+            b =  0.00000E+00 ,   d =  0.00000E+00 , and
+           t0 =  0.00000E+00 ,
+         Tref (surrounding temperature) =  0.00000E+00
+
+       plane geometry
+
+
+ Convected Heat
+            Support       : (DOMAIN*W_7).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+            Output Fields : CONV_HEAT       
+
+       algebraic post-processor 2D and 2D 1/2
+       the mean least square technique is applied for computing
+       the convected heat flux defined as the integral
+        /
+        | ro Cp V (T-Tref) dS , where :
+        /
+         ro (specific mass) =  1.00000E+03 ,
+         Cp (heat capacity) = 
+         a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3, with
+            a =  2.00000E+03 ,   c =  0.00000E+00 ,
+            b =  0.00000E+00 ,   d =  0.00000E+00 , and
+           t0 =  0.00000E+00 ,
+         Tref (surrounding temperature) =  0.00000E+00
+
+       plane geometry
+
+
+ Convected Heat
+            Support       : (DOMAIN*W_8).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+            Output Fields : CONV_HEAT       
+
+       algebraic post-processor 2D and 2D 1/2
+       the mean least square technique is applied for computing
+       the convected heat flux defined as the integral
+        /
+        | ro Cp V (T-Tref) dS , where :
+        /
+         ro (specific mass) =  1.00000E+03 ,
+         Cp (heat capacity) = 
+         a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3, with
+            a =  2.00000E+03 ,   c =  0.00000E+00 ,
+            b =  0.00000E+00 ,   d =  0.00000E+00 , and
+           t0 =  0.00000E+00 ,
+         Tref (surrounding temperature) =  0.00000E+00
+
+       plane geometry
+
+
+ Convected Heat
+            Support       : (DOMAIN*W_9).
+            Coordinates   : COORDINATES     
+            Input Fields  : VELOCITIES      
+                            TEMPERATURE     
+            Output Fields : CONV_HEAT       
+
+       algebraic post-processor 2D and 2D 1/2
+       the mean least square technique is applied for computing
+       the convected heat flux defined as the integral
+        /
+        | ro Cp V (T-Tref) dS , where :
+        /
+         ro (specific mass) =  1.00000E+03 ,
+         Cp (heat capacity) = 
+         a + b * (t-t0) + c * (t-t0)**2 + d * (t-t0)**3, with
+            a =  2.00000E+03 ,   c =  0.00000E+00 ,
+            b =  0.00000E+00 ,   d =  0.00000E+00 , and
+           t0 =  0.00000E+00 ,
+         Tref (surrounding temperature) =  0.00000E+00
+
+       plane geometry
+       
+ 
+ 
+ 
+ 
+ ***************
+ *             *
+ *  EVOLUTION  *
+ *             *
+ ***************
+ 
+ Running evolution for S within [ 1.000E-03 , 1.000E+00 ]
+  with dS-ini = 1.000E-02,
+       dS-min = 1.000E-04, dS-max = 2.500E-01,
+  with up to 20 successful steps,
+  Continuation scheme  : 0-order
+ 
+ 
+ 
+  ===> Starting Evolution
+         at S-ini = 1.000E-03
+  =================================
+ 
+ 
+
+
+ 
+ ***************************
+ ***   Starting Step 1   ***
+ ***************************
+   Parameters and Fields                        |   Progress bar(s)  |
+ Evolution parameter S     =  1.0000000E-03     |>                   |
+ Parameter a               =  2.0000000E+02     |>                   |
+ Parameter a               =  2.0000000E+00     |>                   |
+ Parameter scaling factor  =  1.0000000E-03     |>                   |
+ Field COORDINATES     
+ Field VEL_IMP#1       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#2       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#3       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#4       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#5       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#6       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#7       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#8       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#9       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP10       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP11       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP12       
+ Field MVPTS_VELOCITY  
+
+ Preprocessors
+
+
+ Preprocessors
+
+
+ Preprocessors
+
+
+ Preprocessors
+
+
+ Preprocessors
+
+
+ Preprocessors
+
+
+ Preprocessors
+
+
+ Preprocessors
+
+
+ Preprocessors
+
+
+ Preprocessors
+
+
+ Preprocessors
+
+
+ Preprocessors
+
+
+ Preprocessors
+
+  Elapsed time to compute INSIDE#1 :         5.000 sec.
+    Build Table time .......... :         0.000 sec.
+    Init Field time ........... :         0.000 sec.
+    Total Detection time ...... :         5.000 sec.
+      Process #1
+        Rough Detection time .. :         3.000 sec.
+        Accurate Detection time :         2.000 sec.
+
+ Preprocessors
+
+  Elapsed time to compute INSIDE#2 :         5.000 sec.
+    Build Table time .......... :         0.000 sec.
+    Init Field time ........... :         0.000 sec.
+    Total Detection time ...... :         5.000 sec.
+      Process #1
+        Rough Detection time .. :         1.000 sec.
+        Accurate Detection time :         4.000 sec.
+
+ Preprocessors
+
+  Elapsed time to compute INSIDE#3 :         5.000 sec.
+    Build Table time .......... :         0.000 sec.
+    Init Field time ........... :         0.000 sec.
+    Total Detection time ...... :         5.000 sec.
+      Process #1
+        Rough Detection time .. :         1.000 sec.
+        Accurate Detection time :         4.000 sec.
+
+ Preprocessors
+
+  Elapsed time to compute INSIDE#4 :         5.000 sec.
+    Build Table time .......... :         0.000 sec.
+    Init Field time ........... :         0.000 sec.
+    Total Detection time ...... :         5.000 sec.
+      Process #1
+        Rough Detection time .. :         2.000 sec.
+        Accurate Detection time :         3.000 sec.
+
+ Preprocessors
+
+  Elapsed time to compute INSIDE#5 :         5.000 sec.
+    Build Table time .......... :         0.000 sec.
+    Init Field time ........... :         0.000 sec.
+    Total Detection time ...... :         5.000 sec.
+      Process #1
+        Rough Detection time .. :         2.000 sec.
+        Accurate Detection time :         3.000 sec.
+
+ Preprocessors
+
+  Elapsed time to compute INSIDE#6 :         5.000 sec.
+    Build Table time .......... :         0.000 sec.
+    Init Field time ........... :         0.000 sec.
+    Total Detection time ...... :         5.000 sec.
+      Process #1
+        Rough Detection time .. :         1.000 sec.
+        Accurate Detection time :         4.000 sec.
+
+ Preprocessors
+
+  Elapsed time to compute INSIDE#7 :         5.000 sec.
+    Build Table time .......... :         0.000 sec.
+    Init Field time ........... :         0.000 sec.
+    Total Detection time ...... :         5.000 sec.
+      Process #1
+        Rough Detection time .. :         2.000 sec.
+        Accurate Detection time :         3.000 sec.
+
+ Preprocessors
+
+  Elapsed time to compute INSIDE#8 :         5.000 sec.
+    Build Table time .......... :         0.000 sec.
+    Init Field time ........... :         0.000 sec.
+    Total Detection time ...... :         5.000 sec.
+      Process #1
+        Rough Detection time .. :         2.000 sec.
+        Accurate Detection time :         3.000 sec.
+
+ Preprocessors
+
+  Elapsed time to compute INSIDE#9 :         5.000 sec.
+    Build Table time .......... :         0.000 sec.
+    Init Field time ........... :         0.000 sec.
+    Total Detection time ...... :         5.000 sec.
+      Process #1
+        Rough Detection time .. :         2.000 sec.
+        Accurate Detection time :         3.000 sec.
+
+ Preprocessors
+
+  Elapsed time to compute INSIDE10 :         5.000 sec.
+    Build Table time .......... :         0.000 sec.
+    Init Field time ........... :         0.000 sec.
+    Total Detection time ...... :         5.000 sec.
+      Process #1
+        Rough Detection time .. :         2.000 sec.
+        Accurate Detection time :         3.000 sec.
+
+ Preprocessors
+
+  Elapsed time to compute INSIDE11 :         6.000 sec.
+    Build Table time .......... :         1.000 sec.
+    Init Field time ........... :         0.000 sec.
+    Total Detection time ...... :         5.000 sec.
+      Process #1
+        Rough Detection time .. :         3.000 sec.
+        Accurate Detection time :         2.000 sec.
+
+ Preprocessors
+
+  Elapsed time to compute INSIDE12 :         4.000 sec.
+    Build Table time .......... :         0.000 sec.
+    Init Field time ........... :         0.000 sec.
+    Total Detection time ...... :         4.000 sec.
+      Process #1
+        Rough Detection time .. :         1.000 sec.
+        Accurate Detection time :         3.000 sec.
+
+ F.E.M. Task
+
+           *** WARNING *** from [Check_overlapping]
+          Elements overlapped by several moving parts have been detected !
+          This situation can lead to pressure peaks and fluid leakage.
+          It is recommended to refine the flow domain mesh in those areas
+          or to check the position of the moving parts !
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Post globals
+
+  Elapsed time to compute INSIDE_TOTAL :       793.000 sec.
+    Build Table time .......... :         0.000 sec.
+    Init Field time ........... :         0.000 sec.
+    Total Detection time ...... :       793.000 sec.
+      Process #1
+        Rough Detection time .. :       432.000 sec.
+        Accurate Detection time :       361.000 sec.
+
+
+  Flow rates
+
+  Flow rate = -1.1594730E-004   on (DOMAIN*INLET).
+  Flow rate =  1.1593837E-004   on (DOMAIN*OUTLET).
+  Flow rate =  0.0000000E+000   on (DOMAIN*WO).
+  Flow rate =  4.4481637E-021   on (DOMAIN*W_1).
+  Flow rate = -1.0297365E-021   on (DOMAIN*W_10).
+  Flow rate = -5.7806483E-021   on (DOMAIN*W_11).
+  Flow rate =  1.9358611E-020   on (DOMAIN*W_12).
+  Flow rate =  3.7541592E-021   on (DOMAIN*W_2).
+  Flow rate = -8.7650126E-021   on (DOMAIN*W_3).
+  Flow rate =  1.1305181E-020   on (DOMAIN*W_4).
+  Flow rate = -1.3993828E-021   on (DOMAIN*W_5).
+  Flow rate =  2.8124141E-022   on (DOMAIN*W_6).
+  Flow rate =  4.7107936E-022   on (DOMAIN*W_7).
+  Flow rate = -2.5195508E-020   on (DOMAIN*W_8).
+  Flow rate =  8.7805222E-021   on (DOMAIN*W_9).
+
+
+  Convected heat
+
+  Convected heat = -8.6531466E+001   on (DOMAIN*INLET).
+  Convected heat =  8.6524809E+001   on (DOMAIN*OUTLET).
+  Convected heat =  0.0000000E+000   on (DOMAIN*WO).
+  Convected heat = -8.5504520E-015   on (DOMAIN*W_1).
+  Convected heat =  2.2839478E-014   on (DOMAIN*W_10).
+  Convected heat =  2.0346734E-014   on (DOMAIN*W_11).
+  Convected heat = -4.4618172E-015   on (DOMAIN*W_12).
+  Convected heat =  1.8149544E-015   on (DOMAIN*W_2).
+  Convected heat = -1.9253262E-015   on (DOMAIN*W_3).
+  Convected heat =  6.5795893E-015   on (DOMAIN*W_4).
+  Convected heat = -3.2616054E-015   on (DOMAIN*W_5).
+  Convected heat = -5.0671273E-015   on (DOMAIN*W_6).
+  Convected heat = -4.5879099E-015   on (DOMAIN*W_7).
+  Convected heat = -1.4455451E-014   on (DOMAIN*W_8).
+  Convected heat =  1.3971029E-015   on (DOMAIN*W_9).
+
+
+  Total dissipated power
+
+  Dissipated power =  5.0808043E-001   on (DOMAIN).
+
+
+  Volume/Surface of the flow domains
+
+  Volume/Surface =  1.0893221E-004  on (DOMAIN).
+
+
+
+
+ *************************
+ *                       *
+ *    Post-Processors    *
+ *                       *
+ *************************
+
+ Total flux
+
+
+   flux = -0.5146144E-10    on (DOMAIN*INLET).
+   flux = -0.8609958E-15    on (DOMAIN*OUTLET).
+   flux =  0.0000000E+00    on (DOMAIN*WO).
+   flux =  0.0000000E+00    on (DOMAIN*W_1).
+   flux =  0.0000000E+00    on (DOMAIN*W_10).
+   flux =  0.0000000E+00    on (DOMAIN*W_11).
+   flux =  0.0000000E+00    on (DOMAIN*W_12).
+   flux =  0.0000000E+00    on (DOMAIN*W_2).
+   flux =  0.0000000E+00    on (DOMAIN*W_3).
+   flux =  0.0000000E+00    on (DOMAIN*W_4).
+   flux =  0.0000000E+00    on (DOMAIN*W_5).
+   flux =  0.0000000E+00    on (DOMAIN*W_6).
+   flux =  0.0000000E+00    on (DOMAIN*W_7).
+   flux =  0.0000000E+00    on (DOMAIN*W_8).
+   flux =  0.0000000E+00    on (DOMAIN*W_9).
+
+
+
+ Total force 
+
+
+
+ Force and Torque on moving part #1
+
+       force  = ( 0.8091385E+01 , -0.6103524E+01 ,  0.1029837E+03)
+
+       torque = ( 0.1138155E+00 ,  0.1580128E+00 ,  0.1032805E+01)
+
+       reference point = ( 0.0000000E+00 , -0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #2
+
+       force  = ( 0.2372315E+02 , -0.2325813E+02 ,  0.1040460E+03)
+
+       torque = ( 0.2561675E+00 ,  0.3398731E+00 ,  0.1025218E+01)
+
+       reference point = ( 0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #3
+
+       force  = ( 0.2273537E+02 , -0.3229026E+02 ,  0.1028228E+03)
+
+       torque = ( 0.6009269E+00 ,  0.2642605E+00 ,  0.1043879E+01)
+
+       reference point = ( 0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #4
+
+       force  = ( 0.2650506E+01 , -0.3424544E+01 ,  0.9817806E+02)
+
+       torque = ( 0.4204378E-01 , -0.1619258E-01 ,  0.1034563E+01)
+
+       reference point = ( 0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #5
+
+       force  = (-0.1188678E+02 , -0.1428960E+02 ,  0.1006626E+03)
+
+       torque = ( 0.2002767E+00 , -0.2067338E+00 ,  0.1042314E+01)
+
+       reference point = ( 0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #6
+
+       force  = (-0.7469849E+01 , -0.7854794E+01 ,  0.1020246E+03)
+
+       torque = ( 0.2211705E+00 , -0.6996184E-01 ,  0.1038445E+01)
+
+       reference point = ( 0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #7
+
+       force  = (-0.4381655E+01 ,  0.1028264E+02 ,  0.9476643E+02)
+
+       torque = (-0.1229224E+00 ,  0.1668766E-02 ,  0.1069475E+01)
+
+       reference point = ( 0.0000000E+00 ,  0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #8
+
+       force  = (-0.2218440E+02 ,  0.2103886E+02 ,  0.1052736E+03)
+
+       torque = (-0.2247695E+00 , -0.3364004E+00 ,  0.1026174E+01)
+
+       reference point = (-0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #9
+
+       force  = (-0.1967811E+02 ,  0.3110633E+02 ,  0.9968314E+02)
+
+       torque = (-0.5977404E+00 , -0.2399368E+00 ,  0.1046586E+01)
+
+       reference point = (-0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #10
+
+       force  = (-0.8626710E+01 ,  0.9324204E+01 ,  0.9419578E+02)
+
+       torque = (-0.1617719E+00 , -0.6295189E-01 ,  0.1069818E+01)
+
+       reference point = (-0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #11
+
+       force  = ( 0.1019439E+02 ,  0.1280601E+02 ,  0.1078700E+03)
+
+       torque = (-0.1947426E+00 ,  0.1578305E+00 ,  0.1014658E+01)
+
+       reference point = (-0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #12
+
+       force  = ( 0.1654549E+02 ,  0.1442005E+02 ,  0.8651979E+02)
+
+       torque = (-0.3840273E+00 ,  0.3119806E+00 ,  0.1266860E+01)
+
+       reference point = (-0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+
+ 
+
+ Local shear rate (triggered by outputs)
+
+
+
+ Postprocessors (triggered by outputs)
+
+
+
+ Dumping Temper. (triggered by outputs)
+
+
+ 
+ *** Step size information : ***
+ ===============================
+ S     = 1.0000000E-03, step #1
+ dSnew = 1.5000000E-02, okincr = T
+ tests = 7.1234828E-04
+ 
+
+
+ 
+ ***************************
+ ***   Starting Step 2   ***
+ ***************************
+   Parameters and Fields                        |   Progress bar(s)  |
+ Evolution parameter S     =  1.6000000E-02     |>                   |
+ Parameter a               =  1.2500000E+01     |========>           |
+ Parameter a               =  3.2000000E+01     |>                   |
+ Parameter scaling factor  =  1.6000000E-02     |>                   |
+ Field COORDINATES     
+ Field VEL_IMP#1       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#2       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#3       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#4       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#5       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#6       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#7       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#8       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#9       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP10       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP11       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP12       
+ Field MVPTS_VELOCITY  
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#1
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#2
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#3
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#4
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#5
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#6
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#7
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#8
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#9
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE10
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE11
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE12
+  (as the moving part is fixed, this field is unchanged)
+
+ F.E.M. Task
+
+           *** WARNING *** from [Check_overlapping]
+          Elements overlapped by several moving parts have been detected !
+          This situation can lead to pressure peaks and fluid leakage.
+          It is recommended to refine the flow domain mesh in those areas
+          or to check the position of the moving parts !
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Post globals
+
+  Reusing previous values of INSIDE_TOTAL
+  (as the moving part is fixed, this field is unchanged)
+
+
+  Flow rates
+
+  Flow rate = -1.1596205E-004   on (DOMAIN*INLET).
+  Flow rate =  1.1595312E-004   on (DOMAIN*OUTLET).
+  Flow rate =  0.0000000E+000   on (DOMAIN*WO).
+  Flow rate =  4.1813980E-021   on (DOMAIN*W_1).
+  Flow rate = -1.0015784E-021   on (DOMAIN*W_10).
+  Flow rate = -6.5896310E-021   on (DOMAIN*W_11).
+  Flow rate =  1.5459799E-020   on (DOMAIN*W_12).
+  Flow rate =  4.4163173E-021   on (DOMAIN*W_2).
+  Flow rate = -1.0336863E-020   on (DOMAIN*W_3).
+  Flow rate =  1.1295646E-020   on (DOMAIN*W_4).
+  Flow rate = -1.8359274E-021   on (DOMAIN*W_5).
+  Flow rate =  3.5072458E-022   on (DOMAIN*W_6).
+  Flow rate =  3.7305846E-022   on (DOMAIN*W_7).
+  Flow rate = -2.1232899E-020   on (DOMAIN*W_8).
+  Flow rate =  1.0008058E-020   on (DOMAIN*W_9).
+
+
+  Convected heat
+
+  Convected heat = -1.3846796E+003   on (DOMAIN*INLET).
+  Convected heat =  1.3845730E+003   on (DOMAIN*OUTLET).
+  Convected heat =  0.0000000E+000   on (DOMAIN*WO).
+  Convected heat = -1.3979963E-013   on (DOMAIN*W_1).
+  Convected heat =  3.6533772E-013   on (DOMAIN*W_10).
+  Convected heat =  3.1936275E-013   on (DOMAIN*W_11).
+  Convected heat = -8.6929704E-014   on (DOMAIN*W_12).
+  Convected heat =  2.8220915E-014   on (DOMAIN*W_2).
+  Convected heat = -3.0548264E-014   on (DOMAIN*W_3).
+  Convected heat =  1.0518603E-013   on (DOMAIN*W_4).
+  Convected heat = -4.6996586E-014   on (DOMAIN*W_5).
+  Convected heat = -8.5450744E-014   on (DOMAIN*W_6).
+  Convected heat = -6.9189012E-014   on (DOMAIN*W_7).
+  Convected heat = -2.0609382E-013   on (DOMAIN*W_8).
+  Convected heat =  2.5114242E-014   on (DOMAIN*W_9).
+
+
+  Total dissipated power
+
+  Dissipated power =  8.1292197E+000   on (DOMAIN).
+
+
+  Volume/Surface of the flow domains
+
+  Volume/Surface =  1.0893221E-004  on (DOMAIN).
+
+
+
+
+ *************************
+ *                       *
+ *    Post-Processors    *
+ *                       *
+ *************************
+
+ Total flux
+
+
+   flux = -0.5146235E-10    on (DOMAIN*INLET).
+   flux = -0.8611397E-15    on (DOMAIN*OUTLET).
+   flux =  0.0000000E+00    on (DOMAIN*WO).
+   flux =  0.0000000E+00    on (DOMAIN*W_1).
+   flux =  0.0000000E+00    on (DOMAIN*W_10).
+   flux =  0.0000000E+00    on (DOMAIN*W_11).
+   flux =  0.0000000E+00    on (DOMAIN*W_12).
+   flux =  0.0000000E+00    on (DOMAIN*W_2).
+   flux =  0.0000000E+00    on (DOMAIN*W_3).
+   flux =  0.0000000E+00    on (DOMAIN*W_4).
+   flux =  0.0000000E+00    on (DOMAIN*W_5).
+   flux =  0.0000000E+00    on (DOMAIN*W_6).
+   flux =  0.0000000E+00    on (DOMAIN*W_7).
+   flux =  0.0000000E+00    on (DOMAIN*W_8).
+   flux =  0.0000000E+00    on (DOMAIN*W_9).
+
+
+
+ Total force 
+
+
+
+ Force and Torque on moving part #1
+
+       force  = ( 0.8092145E+01 , -0.6102927E+01 ,  0.1030031E+03)
+
+       torque = ( 0.1137567E+00 ,  0.1580268E+00 ,  0.1032880E+01)
+
+       reference point = ( 0.0000000E+00 , -0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #2
+
+       force  = ( 0.2372306E+02 , -0.2326073E+02 ,  0.1040663E+03)
+
+       torque = ( 0.2561400E+00 ,  0.3398615E+00 ,  0.1025322E+01)
+
+       reference point = ( 0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #3
+
+       force  = ( 0.2273416E+02 , -0.3229220E+02 ,  0.1028434E+03)
+
+       torque = ( 0.6009286E+00 ,  0.2641690E+00 ,  0.1043993E+01)
+
+       reference point = ( 0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #4
+
+       force  = ( 0.2650024E+01 , -0.3424838E+01 ,  0.9819762E+02)
+
+       torque = ( 0.4205153E-01 , -0.1624547E-01 ,  0.1034643E+01)
+
+       reference point = ( 0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #5
+
+       force  = (-0.1188393E+02 , -0.1429070E+02 ,  0.1006831E+03)
+
+       torque = ( 0.2003185E+00 , -0.2067740E+00 ,  0.1042427E+01)
+
+       reference point = ( 0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #6
+
+       force  = (-0.7469998E+01 , -0.7858938E+01 ,  0.1020447E+03)
+
+       torque = ( 0.2212997E+00 , -0.6998096E-01 ,  0.1038554E+01)
+
+       reference point = ( 0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #7
+
+       force  = (-0.4381734E+01 ,  0.1028293E+02 ,  0.9478503E+02)
+
+       torque = (-0.1228777E+00 ,  0.1671677E-02 ,  0.1069555E+01)
+
+       reference point = ( 0.0000000E+00 ,  0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #8
+
+       force  = (-0.2218335E+02 ,  0.2104188E+02 ,  0.1052938E+03)
+
+       torque = (-0.2247524E+00 , -0.3363710E+00 ,  0.1026276E+01)
+
+       reference point = (-0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #9
+
+       force  = (-0.1967549E+02 ,  0.3110783E+02 ,  0.9970345E+02)
+
+       torque = (-0.5977362E+00 , -0.2398245E+00 ,  0.1046696E+01)
+
+       reference point = (-0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #10
+
+       force  = (-0.8627075E+01 ,  0.9324215E+01 ,  0.9421531E+02)
+
+       torque = (-0.1617793E+00 , -0.6291172E-01 ,  0.1069904E+01)
+
+       reference point = (-0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #11
+
+       force  = ( 0.1019142E+02 ,  0.1280683E+02 ,  0.1078920E+03)
+
+       torque = (-0.1947873E+00 ,  0.1578663E+00 ,  0.1014768E+01)
+
+       reference point = (-0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #12
+
+       force  = ( 0.1654300E+02 ,  0.1442363E+02 ,  0.8653682E+02)
+
+       torque = (-0.3841366E+00 ,  0.3119583E+00 ,  0.1266966E+01)
+
+       reference point = (-0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+
+ 
+
+ Local shear rate (triggered by outputs)
+
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Postprocessors (triggered by outputs)
+
+
+
+ Dumping Temper. (triggered by outputs)
+
+
+ 
+ *** Step size information : ***
+ ===============================
+ S     = 1.6000000E-02, step #2
+ dSnew = 2.2500000E-02, okincr = T
+ tests = 4.3840803E-04
+ 
+
+
+ 
+ ***************************
+ ***   Starting Step 3   ***
+ ***************************
+   Parameters and Fields                        |   Progress bar(s)  |
+ Evolution parameter S     =  3.8500000E-02     |>                   |
+ Parameter a               =  5.1948052E+00     |==========>         |
+ Parameter a               =  7.7000000E+01     |>                   |
+ Parameter scaling factor  =  3.8500000E-02     |>                   |
+ Field COORDINATES     
+ Field VEL_IMP#1       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#2       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#3       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#4       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#5       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#6       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#7       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#8       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#9       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP10       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP11       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP12       
+ Field MVPTS_VELOCITY  
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#1
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#2
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#3
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#4
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#5
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#6
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#7
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#8
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#9
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE10
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE11
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE12
+  (as the moving part is fixed, this field is unchanged)
+
+ F.E.M. Task
+
+           *** WARNING *** from [Check_overlapping]
+          Elements overlapped by several moving parts have been detected !
+          This situation can lead to pressure peaks and fluid leakage.
+          It is recommended to refine the flow domain mesh in those areas
+          or to check the position of the moving parts !
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Post globals
+
+  Reusing previous values of INSIDE_TOTAL
+  (as the moving part is fixed, this field is unchanged)
+
+
+  Flow rates
+
+  Flow rate = -1.1597088E-004   on (DOMAIN*INLET).
+  Flow rate =  1.1596194E-004   on (DOMAIN*OUTLET).
+  Flow rate =  0.0000000E+000   on (DOMAIN*WO).
+  Flow rate =  4.3381487E-021   on (DOMAIN*W_1).
+  Flow rate = -1.0472462E-021   on (DOMAIN*W_10).
+  Flow rate = -6.4917134E-021   on (DOMAIN*W_11).
+  Flow rate =  1.7507174E-020   on (DOMAIN*W_12).
+  Flow rate =  4.5614875E-021   on (DOMAIN*W_2).
+  Flow rate = -9.7646603E-021   on (DOMAIN*W_3).
+  Flow rate =  1.1292376E-020   on (DOMAIN*W_4).
+  Flow rate = -1.5610966E-021   on (DOMAIN*W_5).
+  Flow rate =  4.2020775E-022   on (DOMAIN*W_6).
+  Flow rate =  4.2062134E-022   on (DOMAIN*W_7).
+  Flow rate = -2.1505455E-020   on (DOMAIN*W_8).
+  Flow rate =  9.9662856E-021   on (DOMAIN*W_9).
+
+
+  Convected heat
+
+  Convected heat = -3.3321391E+003   on (DOMAIN*INLET).
+  Convected heat =  3.3318824E+003   on (DOMAIN*OUTLET).
+  Convected heat =  0.0000000E+000   on (DOMAIN*WO).
+  Convected heat = -1.6930381E-013   on (DOMAIN*W_1).
+  Convected heat =  8.8428916E-013   on (DOMAIN*W_10).
+  Convected heat =  7.6096090E-013   on (DOMAIN*W_11).
+  Convected heat = -1.8203071E-013   on (DOMAIN*W_12).
+  Convected heat =  8.2524699E-014   on (DOMAIN*W_2).
+  Convected heat = -5.6825855E-014   on (DOMAIN*W_3).
+  Convected heat =  2.5776753E-013   on (DOMAIN*W_4).
+  Convected heat = -1.1798668E-013   on (DOMAIN*W_5).
+  Convected heat = -3.7344954E-013   on (DOMAIN*W_6).
+  Convected heat =  3.3562129E-014   on (DOMAIN*W_7).
+  Convected heat = -9.1844067E-013   on (DOMAIN*W_8).
+  Convected heat =  1.3688595E-013   on (DOMAIN*W_9).
+
+
+  Total dissipated power
+
+  Dissipated power =  1.9560820E+001   on (DOMAIN).
+
+
+  Volume/Surface of the flow domains
+
+  Volume/Surface =  1.0893221E-004  on (DOMAIN).
+
+
+
+
+ *************************
+ *                       *
+ *    Post-Processors    *
+ *                       *
+ *************************
+
+ Total flux
+
+
+   flux = -0.5146282E-10    on (DOMAIN*INLET).
+   flux = -0.8612747E-15    on (DOMAIN*OUTLET).
+   flux =  0.0000000E+00    on (DOMAIN*WO).
+   flux =  0.0000000E+00    on (DOMAIN*W_1).
+   flux =  0.0000000E+00    on (DOMAIN*W_10).
+   flux =  0.0000000E+00    on (DOMAIN*W_11).
+   flux =  0.0000000E+00    on (DOMAIN*W_12).
+   flux =  0.0000000E+00    on (DOMAIN*W_2).
+   flux =  0.0000000E+00    on (DOMAIN*W_3).
+   flux =  0.0000000E+00    on (DOMAIN*W_4).
+   flux =  0.0000000E+00    on (DOMAIN*W_5).
+   flux =  0.0000000E+00    on (DOMAIN*W_6).
+   flux =  0.0000000E+00    on (DOMAIN*W_7).
+   flux =  0.0000000E+00    on (DOMAIN*W_8).
+   flux =  0.0000000E+00    on (DOMAIN*W_9).
+
+
+
+ Total force 
+
+
+
+ Force and Torque on moving part #1
+
+       force  = ( 0.8092646E+01 , -0.6102581E+01 ,  0.1030150E+03)
+
+       torque = ( 0.1137214E+00 ,  0.1580358E+00 ,  0.1032927E+01)
+
+       reference point = ( 0.0000000E+00 , -0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #2
+
+       force  = ( 0.2372310E+02 , -0.2326238E+02 ,  0.1040786E+03)
+
+       torque = ( 0.2561248E+00 ,  0.3398561E+00 ,  0.1025386E+01)
+
+       reference point = ( 0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #3
+
+       force  = ( 0.2273344E+02 , -0.3229330E+02 ,  0.1028559E+03)
+
+       torque = ( 0.6009285E+00 ,  0.2641134E+00 ,  0.1044063E+01)
+
+       reference point = ( 0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #4
+
+       force  = ( 0.2649758E+01 , -0.3424999E+01 ,  0.9820953E+02)
+
+       torque = ( 0.4205597E-01 , -0.1627719E-01 ,  0.1034691E+01)
+
+       reference point = ( 0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #5
+
+       force  = (-0.1188222E+02 , -0.1429132E+02 ,  0.1006956E+03)
+
+       torque = ( 0.2003427E+00 , -0.2067982E+00 ,  0.1042495E+01)
+
+       reference point = ( 0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #6
+
+       force  = (-0.7470201E+01 , -0.7861491E+01 ,  0.1020568E+03)
+
+       torque = ( 0.2213782E+00 , -0.6999405E-01 ,  0.1038621E+01)
+
+       reference point = ( 0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #7
+
+       force  = (-0.4381835E+01 ,  0.1028310E+02 ,  0.9479635E+02)
+
+       torque = (-0.1228508E+00 ,  0.1672638E-02 ,  0.1069604E+01)
+
+       reference point = ( 0.0000000E+00 ,  0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #8
+
+       force  = (-0.2218282E+02 ,  0.2104377E+02 ,  0.1053060E+03)
+
+       torque = (-0.2247435E+00 , -0.3363550E+00 ,  0.1026339E+01)
+
+       reference point = (-0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #9
+
+       force  = (-0.1967391E+02 ,  0.3110867E+02 ,  0.9971576E+02)
+
+       torque = (-0.5977327E+00 , -0.2397564E+00 ,  0.1046763E+01)
+
+       reference point = (-0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #10
+
+       force  = (-0.8627295E+01 ,  0.9324200E+01 ,  0.9422721E+02)
+
+       torque = (-0.1617833E+00 , -0.6288732E-01 ,  0.1069956E+01)
+
+       reference point = (-0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #11
+
+       force  = ( 0.1018965E+02 ,  0.1280730E+02 ,  0.1079053E+03)
+
+       torque = (-0.1948135E+00 ,  0.1578884E+00 ,  0.1014836E+01)
+
+       reference point = (-0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #12
+
+       force  = ( 0.1654165E+02 ,  0.1442585E+02 ,  0.8654714E+02)
+
+       torque = (-0.3842032E+00 ,  0.3119469E+00 ,  0.1267030E+01)
+
+       reference point = (-0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+
+ 
+
+ Local shear rate (triggered by outputs)
+
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Postprocessors (triggered by outputs)
+
+
+
+ Dumping Temper. (triggered by outputs)
+
+
+ 
+ *** Step size information : ***
+ ===============================
+ S     = 3.8500000E-02, step #3
+ dSnew = 3.3750000E-02, okincr = T
+ tests = 2.7032351E-04
+ 
+
+
+ 
+ ***************************
+ ***   Starting Step 4   ***
+ ***************************
+   Parameters and Fields                        |   Progress bar(s)  |
+ Evolution parameter S     =  7.2250000E-02     |=>                  |
+ Parameter a               =  2.7681661E+00     |============>       |
+ Parameter a               =  1.4450000E+02     |=>                  |
+ Parameter scaling factor  =  7.2250000E-02     |=>                  |
+ Field COORDINATES     
+ Field VEL_IMP#1       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#2       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#3       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#4       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#5       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#6       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#7       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#8       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#9       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP10       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP11       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP12       
+ Field MVPTS_VELOCITY  
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#1
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#2
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#3
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#4
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#5
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#6
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#7
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#8
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#9
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE10
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE11
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE12
+  (as the moving part is fixed, this field is unchanged)
+
+ F.E.M. Task
+
+           *** WARNING *** from [Check_overlapping]
+          Elements overlapped by several moving parts have been detected !
+          This situation can lead to pressure peaks and fluid leakage.
+          It is recommended to refine the flow domain mesh in those areas
+          or to check the position of the moving parts !
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Post globals
+
+  Reusing previous values of INSIDE_TOTAL
+  (as the moving part is fixed, this field is unchanged)
+
+
+  Flow rates
+
+  Flow rate = -1.1597619E-004   on (DOMAIN*INLET).
+  Flow rate =  1.1596725E-004   on (DOMAIN*OUTLET).
+  Flow rate =  0.0000000E+000   on (DOMAIN*WO).
+  Flow rate =  4.0713830E-021   on (DOMAIN*W_1).
+  Flow rate = -1.0126262E-021   on (DOMAIN*W_10).
+  Flow rate = -6.4157162E-021   on (DOMAIN*W_11).
+  Flow rate =  1.6108102E-020   on (DOMAIN*W_12).
+  Flow rate =  4.4948994E-021   on (DOMAIN*W_2).
+  Flow rate = -1.0190038E-020   on (DOMAIN*W_3).
+  Flow rate =  1.1289650E-020   on (DOMAIN*W_4).
+  Flow rate = -1.7693393E-021   on (DOMAIN*W_5).
+  Flow rate =  4.8969092E-022   on (DOMAIN*W_6).
+  Flow rate =  4.6818423E-022   on (DOMAIN*W_7).
+  Flow rate = -2.1094760E-020   on (DOMAIN*W_8).
+  Flow rate =  1.0173494E-020   on (DOMAIN*W_9).
+
+
+  Convected heat
+
+  Convected heat = -6.2534565E+003   on (DOMAIN*INLET).
+  Convected heat =  6.2529747E+003   on (DOMAIN*OUTLET).
+  Convected heat =  0.0000000E+000   on (DOMAIN*WO).
+  Convected heat = -1.5940894E-013   on (DOMAIN*W_1).
+  Convected heat =  1.6494438E-012   on (DOMAIN*W_10).
+  Convected heat =  1.1631149E-012   on (DOMAIN*W_11).
+  Convected heat = -3.4754415E-013   on (DOMAIN*W_12).
+  Convected heat =  1.7382363E-014   on (DOMAIN*W_2).
+  Convected heat =  6.1287997E-014   on (DOMAIN*W_3).
+  Convected heat =  4.7226155E-013   on (DOMAIN*W_4).
+  Convected heat = -6.7651939E-014   on (DOMAIN*W_5).
+  Convected heat = -1.9668815E-013   on (DOMAIN*W_6).
+  Convected heat = -7.5100950E-014   on (DOMAIN*W_7).
+  Convected heat = -9.5230247E-013   on (DOMAIN*W_8).
+  Convected heat = -4.4413475E-014   on (DOMAIN*W_9).
+
+
+  Total dissipated power
+
+  Dissipated power =  3.6708144E+001   on (DOMAIN).
+
+
+  Volume/Surface of the flow domains
+
+  Volume/Surface =  1.0893221E-004  on (DOMAIN).
+
+
+
+
+ *************************
+ *                       *
+ *    Post-Processors    *
+ *                       *
+ *************************
+
+ Total flux
+
+
+   flux = -0.5146307E-10    on (DOMAIN*INLET).
+   flux = -0.8613861E-15    on (DOMAIN*OUTLET).
+   flux =  0.0000000E+00    on (DOMAIN*WO).
+   flux =  0.0000000E+00    on (DOMAIN*W_1).
+   flux =  0.0000000E+00    on (DOMAIN*W_10).
+   flux =  0.0000000E+00    on (DOMAIN*W_11).
+   flux =  0.0000000E+00    on (DOMAIN*W_12).
+   flux =  0.0000000E+00    on (DOMAIN*W_2).
+   flux =  0.0000000E+00    on (DOMAIN*W_3).
+   flux =  0.0000000E+00    on (DOMAIN*W_4).
+   flux =  0.0000000E+00    on (DOMAIN*W_5).
+   flux =  0.0000000E+00    on (DOMAIN*W_6).
+   flux =  0.0000000E+00    on (DOMAIN*W_7).
+   flux =  0.0000000E+00    on (DOMAIN*W_8).
+   flux =  0.0000000E+00    on (DOMAIN*W_9).
+
+
+
+ Total force 
+
+
+
+ Force and Torque on moving part #1
+
+       force  = ( 0.8092965E+01 , -0.6102382E+01 ,  0.1030222E+03)
+
+       torque = ( 0.1137000E+00 ,  0.1580415E+00 ,  0.1032956E+01)
+
+       reference point = ( 0.0000000E+00 , -0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #2
+
+       force  = ( 0.2372318E+02 , -0.2326340E+02 ,  0.1040861E+03)
+
+       torque = ( 0.2561163E+00 ,  0.3398537E+00 ,  0.1025425E+01)
+
+       reference point = ( 0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #3
+
+       force  = ( 0.2273299E+02 , -0.3229390E+02 ,  0.1028636E+03)
+
+       torque = ( 0.6009277E+00 ,  0.2640795E+00 ,  0.1044105E+01)
+
+       reference point = ( 0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #4
+
+       force  = ( 0.2649611E+01 , -0.3425086E+01 ,  0.9821680E+02)
+
+       torque = ( 0.4205850E-01 , -0.1629628E-01 ,  0.1034721E+01)
+
+       reference point = ( 0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #5
+
+       force  = (-0.1188119E+02 , -0.1429165E+02 ,  0.1007032E+03)
+
+       torque = ( 0.2003568E+00 , -0.2068128E+00 ,  0.1042538E+01)
+
+       reference point = ( 0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #6
+
+       force  = (-0.7470380E+01 , -0.7863052E+01 ,  0.1020642E+03)
+
+       torque = ( 0.2214257E+00 , -0.7000270E-01 ,  0.1038662E+01)
+
+       reference point = ( 0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #7
+
+       force  = (-0.4381921E+01 ,  0.1028320E+02 ,  0.9480325E+02)
+
+       torque = (-0.1228345E+00 ,  0.1672868E-02 ,  0.1069634E+01)
+
+       reference point = ( 0.0000000E+00 ,  0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #8
+
+       force  = (-0.2218254E+02 ,  0.2104493E+02 ,  0.1053135E+03)
+
+       torque = (-0.2247386E+00 , -0.3363460E+00 ,  0.1026378E+01)
+
+       reference point = (-0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #9
+
+       force  = (-0.1967294E+02 ,  0.3110913E+02 ,  0.9972325E+02)
+
+       torque = (-0.5977299E+00 , -0.2397150E+00 ,  0.1046804E+01)
+
+       reference point = (-0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #10
+
+       force  = (-0.8627429E+01 ,  0.9324176E+01 ,  0.9423448E+02)
+
+       torque = (-0.1617856E+00 , -0.6287249E-01 ,  0.1069988E+01)
+
+       reference point = (-0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #11
+
+       force  = ( 0.1018859E+02 ,  0.1280756E+02 ,  0.1079134E+03)
+
+       torque = (-0.1948289E+00 ,  0.1579020E+00 ,  0.1014877E+01)
+
+       reference point = (-0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #12
+
+       force  = ( 0.1654091E+02 ,  0.1442722E+02 ,  0.8655342E+02)
+
+       torque = (-0.3842437E+00 ,  0.3119411E+00 ,  0.1267070E+01)
+
+       reference point = (-0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+
+ 
+
+ Local shear rate (triggered by outputs)
+
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Postprocessors (triggered by outputs)
+
+
+
+ Dumping Temper. (triggered by outputs)
+
+
+ 
+ *** Step size information : ***
+ ===============================
+ S     = 7.2250000E-02, step #4
+ dSnew = 5.0625000E-02, okincr = T
+ tests = 1.6697396E-04
+ 
+
+
+ 
+ ***************************
+ ***   Starting Step 5   ***
+ ***************************
+   Parameters and Fields                        |   Progress bar(s)  |
+ Evolution parameter S     =  1.2287500E-01     |==>                 |
+ Parameter a               =  1.6276704E+00     |=============>      |
+ Parameter a               =  2.4575000E+02     |==>                 |
+ Parameter scaling factor  =  1.2287500E-01     |==>                 |
+ Field COORDINATES     
+ Field VEL_IMP#1       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#2       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#3       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#4       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#5       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#6       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#7       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#8       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#9       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP10       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP11       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP12       
+ Field MVPTS_VELOCITY  
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#1
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#2
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#3
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#4
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#5
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#6
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#7
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#8
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#9
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE10
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE11
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE12
+  (as the moving part is fixed, this field is unchanged)
+
+ F.E.M. Task
+
+           *** WARNING *** from [Check_overlapping]
+          Elements overlapped by several moving parts have been detected !
+          This situation can lead to pressure peaks and fluid leakage.
+          It is recommended to refine the flow domain mesh in those areas
+          or to check the position of the moving parts !
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Post globals
+
+  Reusing previous values of INSIDE_TOTAL
+  (as the moving part is fixed, this field is unchanged)
+
+
+  Flow rates
+
+  Flow rate = -1.1597940E-004   on (DOMAIN*INLET).
+  Flow rate =  1.1597046E-004   on (DOMAIN*OUTLET).
+  Flow rate =  0.0000000E+000   on (DOMAIN*WO).
+  Flow rate =  4.9395090E-021   on (DOMAIN*W_1).
+  Flow rate = -1.0531035E-021   on (DOMAIN*W_10).
+  Flow rate = -6.3601917E-021   on (DOMAIN*W_11).
+  Flow rate =  1.6867557E-020   on (DOMAIN*W_12).
+  Flow rate =  4.4283114E-021   on (DOMAIN*W_2).
+  Flow rate = -9.9747642E-021   on (DOMAIN*W_3).
+  Flow rate =  1.1287305E-020   on (DOMAIN*W_4).
+  Flow rate = -1.4945086E-021   on (DOMAIN*W_5).
+  Flow rate =  2.8124141E-022   on (DOMAIN*W_6).
+  Flow rate =  3.7016332E-022   on (DOMAIN*W_7).
+  Flow rate = -2.1367316E-020   on (DOMAIN*W_8).
+  Flow rate =  1.0025843E-020   on (DOMAIN*W_9).
+
+
+  Convected heat
+
+  Convected heat = -1.0635498E+004   on (DOMAIN*INLET).
+  Convected heat =  1.0634678E+004   on (DOMAIN*OUTLET).
+  Convected heat =  0.0000000E+000   on (DOMAIN*WO).
+  Convected heat =  1.3910227E-013   on (DOMAIN*W_1).
+  Convected heat =  2.8046509E-012   on (DOMAIN*W_10).
+  Convected heat =  2.0055105E-012   on (DOMAIN*W_11).
+  Convected heat = -1.2591344E-012   on (DOMAIN*W_12).
+  Convected heat =  1.6315465E-013   on (DOMAIN*W_2).
+  Convected heat = -1.8001898E-013   on (DOMAIN*W_3).
+  Convected heat =  8.1373886E-013   on (DOMAIN*W_4).
+  Convected heat = -4.2927933E-013   on (DOMAIN*W_5).
+  Convected heat = -1.3476841E-012   on (DOMAIN*W_6).
+  Convected heat = -1.4609971E-013   on (DOMAIN*W_7).
+  Convected heat = -2.2599232E-012   on (DOMAIN*W_8).
+  Convected heat =  1.1409862E-013   on (DOMAIN*W_9).
+
+
+  Total dissipated power
+
+  Dissipated power =  6.2429075E+001   on (DOMAIN).
+
+
+  Volume/Surface of the flow domains
+
+  Volume/Surface =  1.0893221E-004  on (DOMAIN).
+
+
+
+
+ *************************
+ *                       *
+ *    Post-Processors    *
+ *                       *
+ *************************
+
+ Total flux
+
+
+   flux = -0.5146320E-10    on (DOMAIN*INLET).
+   flux = -0.8614660E-15    on (DOMAIN*OUTLET).
+   flux =  0.0000000E+00    on (DOMAIN*WO).
+   flux =  0.0000000E+00    on (DOMAIN*W_1).
+   flux =  0.0000000E+00    on (DOMAIN*W_10).
+   flux =  0.0000000E+00    on (DOMAIN*W_11).
+   flux =  0.0000000E+00    on (DOMAIN*W_12).
+   flux =  0.0000000E+00    on (DOMAIN*W_2).
+   flux =  0.0000000E+00    on (DOMAIN*W_3).
+   flux =  0.0000000E+00    on (DOMAIN*W_4).
+   flux =  0.0000000E+00    on (DOMAIN*W_5).
+   flux =  0.0000000E+00    on (DOMAIN*W_6).
+   flux =  0.0000000E+00    on (DOMAIN*W_7).
+   flux =  0.0000000E+00    on (DOMAIN*W_8).
+   flux =  0.0000000E+00    on (DOMAIN*W_9).
+
+
+
+ Total force 
+
+
+
+ Force and Torque on moving part #1
+
+       force  = ( 0.8093163E+01 , -0.6102268E+01 ,  0.1030266E+03)
+
+       torque = ( 0.1136871E+00 ,  0.1580450E+00 ,  0.1032973E+01)
+
+       reference point = ( 0.0000000E+00 , -0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #2
+
+       force  = ( 0.2372324E+02 , -0.2326404E+02 ,  0.1040907E+03)
+
+       torque = ( 0.2561114E+00 ,  0.3398526E+00 ,  0.1025450E+01)
+
+       reference point = ( 0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #3
+
+       force  = ( 0.2273272E+02 , -0.3229424E+02 ,  0.1028682E+03)
+
+       torque = ( 0.6009267E+00 ,  0.2640588E+00 ,  0.1044132E+01)
+
+       reference point = ( 0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #4
+
+       force  = ( 0.2649529E+01 , -0.3425132E+01 ,  0.9822126E+02)
+
+       torque = ( 0.4205994E-01 , -0.1630780E-01 ,  0.1034739E+01)
+
+       reference point = ( 0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #5
+
+       force  = (-0.1188056E+02 , -0.1429183E+02 ,  0.1007078E+03)
+
+       torque = ( 0.2003650E+00 , -0.2068216E+00 ,  0.1042563E+01)
+
+       reference point = ( 0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #6
+
+       force  = (-0.7470516E+01 , -0.7864002E+01 ,  0.1020688E+03)
+
+       torque = ( 0.2214545E+00 , -0.7000830E-01 ,  0.1038687E+01)
+
+       reference point = ( 0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #7
+
+       force  = (-0.4381982E+01 ,  0.1028326E+02 ,  0.9480748E+02)
+
+       torque = (-0.1228246E+00 ,  0.1672861E-02 ,  0.1069652E+01)
+
+       reference point = ( 0.0000000E+00 ,  0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #8
+
+       force  = (-0.2218239E+02 ,  0.2104565E+02 ,  0.1053180E+03)
+
+       torque = (-0.2247359E+00 , -0.3363409E+00 ,  0.1026402E+01)
+
+       reference point = (-0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #9
+
+       force  = (-0.1967235E+02 ,  0.3110937E+02 ,  0.9972782E+02)
+
+       torque = (-0.5977278E+00 , -0.2396898E+00 ,  0.1046829E+01)
+
+       reference point = (-0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #10
+
+       force  = (-0.8627511E+01 ,  0.9324153E+01 ,  0.9423894E+02)
+
+       torque = (-0.1617868E+00 , -0.6286348E-01 ,  0.1070008E+01)
+
+       reference point = (-0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #11
+
+       force  = ( 0.1018795E+02 ,  0.1280770E+02 ,  0.1079183E+03)
+
+       torque = (-0.1948379E+00 ,  0.1579103E+00 ,  0.1014903E+01)
+
+       reference point = (-0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #12
+
+       force  = ( 0.1654050E+02 ,  0.1442805E+02 ,  0.8655724E+02)
+
+       torque = (-0.3842683E+00 ,  0.3119380E+00 ,  0.1267094E+01)
+
+       reference point = (-0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+
+ 
+
+ Local shear rate (triggered by outputs)
+
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Postprocessors (triggered by outputs)
+
+
+
+ Dumping Temper. (triggered by outputs)
+
+
+ 
+ *** Step size information : ***
+ ===============================
+ S     = 1.2287500E-01, step #5
+ dSnew = 7.5937500E-02, okincr = T
+ tests = 1.0330411E-04
+ 
+
+
+ 
+ ***************************
+ ***   Starting Step 6   ***
+ ***************************
+   Parameters and Fields                        |   Progress bar(s)  |
+ Evolution parameter S     =  1.9881250E-01     |===>                |
+ Parameter a               =  1.0059730E+00     |===============>    |
+ Parameter a               =  3.9762500E+02     |===>                |
+ Parameter scaling factor  =  1.9881250E-01     |===>                |
+ Field COORDINATES     
+ Field VEL_IMP#1       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#2       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#3       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#4       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#5       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#6       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#7       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#8       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#9       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP10       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP11       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP12       
+ Field MVPTS_VELOCITY  
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#1
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#2
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#3
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#4
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#5
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#6
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#7
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#8
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#9
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE10
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE11
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE12
+  (as the moving part is fixed, this field is unchanged)
+
+ F.E.M. Task
+
+           *** WARNING *** from [Check_overlapping]
+          Elements overlapped by several moving parts have been detected !
+          This situation can lead to pressure peaks and fluid leakage.
+          It is recommended to refine the flow domain mesh in those areas
+          or to check the position of the moving parts !
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Post globals
+
+  Reusing previous values of INSIDE_TOTAL
+  (as the moving part is fixed, this field is unchanged)
+
+
+  Flow rates
+
+  Flow rate = -1.1598134E-004   on (DOMAIN*INLET).
+  Flow rate =  1.1597240E-004   on (DOMAIN*OUTLET).
+  Flow rate =  0.0000000E+000   on (DOMAIN*WO).
+  Flow rate =  4.2492268E-021   on (DOMAIN*W_1).
+  Flow rate = -1.0090545E-021   on (DOMAIN*W_10).
+  Flow rate = -6.3112847E-021   on (DOMAIN*W_11).
+  Flow rate =  1.6238176E-020   on (DOMAIN*W_12).
+  Flow rate =  4.5734816E-021   on (DOMAIN*W_2).
+  Flow rate = -1.0024188E-020   on (DOMAIN*W_3).
+  Flow rate =  1.1289185E-020   on (DOMAIN*W_4).
+  Flow rate = -1.7037853E-021   on (DOMAIN*W_5).
+  Flow rate =  3.5072458E-022   on (DOMAIN*W_6).
+  Flow rate =  4.1772621E-022   on (DOMAIN*W_7).
+  Flow rate = -2.1639872E-020   on (DOMAIN*W_8).
+  Flow rate =  9.9840700E-021   on (DOMAIN*W_9).
+
+
+  Convected heat
+
+  Convected heat = -1.7208589E+004   on (DOMAIN*INLET).
+  Convected heat =  1.7207263E+004   on (DOMAIN*OUTLET).
+  Convected heat =  0.0000000E+000   on (DOMAIN*WO).
+  Convected heat =  7.4034355E-013   on (DOMAIN*W_1).
+  Convected heat =  4.5508625E-012   on (DOMAIN*W_10).
+  Convected heat =  3.3300760E-012   on (DOMAIN*W_11).
+  Convected heat = -1.7092327E-012   on (DOMAIN*W_12).
+  Convected heat =  1.0892025E-013   on (DOMAIN*W_2).
+  Convected heat = -4.8105595E-013   on (DOMAIN*W_3).
+  Convected heat =  1.3185553E-012   on (DOMAIN*W_4).
+  Convected heat = -6.9934108E-013   on (DOMAIN*W_5).
+  Convected heat = -1.3191514E-012   on (DOMAIN*W_6).
+  Convected heat = -1.5670234E-013   on (DOMAIN*W_7).
+  Convected heat = -4.6658320E-012   on (DOMAIN*W_8).
+  Convected heat =  2.7807856E-013   on (DOMAIN*W_9).
+
+
+  Total dissipated power
+
+  Dissipated power =  1.0101044E+002   on (DOMAIN).
+
+
+  Volume/Surface of the flow domains
+
+  Volume/Surface =  1.0893221E-004  on (DOMAIN).
+
+
+
+
+ *************************
+ *                       *
+ *    Post-Processors    *
+ *                       *
+ *************************
+
+ Total flux
+
+
+   flux = -0.5146326E-10    on (DOMAIN*INLET).
+   flux = -0.8615217E-15    on (DOMAIN*OUTLET).
+   flux =  0.0000000E+00    on (DOMAIN*WO).
+   flux =  0.0000000E+00    on (DOMAIN*W_1).
+   flux =  0.0000000E+00    on (DOMAIN*W_10).
+   flux =  0.0000000E+00    on (DOMAIN*W_11).
+   flux =  0.0000000E+00    on (DOMAIN*W_12).
+   flux =  0.0000000E+00    on (DOMAIN*W_2).
+   flux =  0.0000000E+00    on (DOMAIN*W_3).
+   flux =  0.0000000E+00    on (DOMAIN*W_4).
+   flux =  0.0000000E+00    on (DOMAIN*W_5).
+   flux =  0.0000000E+00    on (DOMAIN*W_6).
+   flux =  0.0000000E+00    on (DOMAIN*W_7).
+   flux =  0.0000000E+00    on (DOMAIN*W_8).
+   flux =  0.0000000E+00    on (DOMAIN*W_9).
+
+
+
+ Total force 
+
+
+
+ Force and Torque on moving part #1
+
+       force  = ( 0.8093283E+01 , -0.6102203E+01 ,  0.1030292E+03)
+
+       torque = ( 0.1136793E+00 ,  0.1580471E+00 ,  0.1032984E+01)
+
+       reference point = ( 0.0000000E+00 , -0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #2
+
+       force  = ( 0.2372329E+02 , -0.2326443E+02 ,  0.1040935E+03)
+
+       torque = ( 0.2561085E+00 ,  0.3398521E+00 ,  0.1025465E+01)
+
+       reference point = ( 0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #3
+
+       force  = ( 0.2273255E+02 , -0.3229442E+02 ,  0.1028711E+03)
+
+       torque = ( 0.6009258E+00 ,  0.2640461E+00 ,  0.1044148E+01)
+
+       reference point = ( 0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #4
+
+       force  = ( 0.2649484E+01 , -0.3425156E+01 ,  0.9822400E+02)
+
+       torque = ( 0.4206075E-01 , -0.1631477E-01 ,  0.1034750E+01)
+
+       reference point = ( 0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #5
+
+       force  = (-0.1188017E+02 , -0.1429192E+02 ,  0.1007106E+03)
+
+       torque = ( 0.2003697E+00 , -0.2068268E+00 ,  0.1042579E+01)
+
+       reference point = ( 0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #6
+
+       force  = (-0.7470612E+01 , -0.7864579E+01 ,  0.1020715E+03)
+
+       torque = ( 0.2214720E+00 , -0.7001188E-01 ,  0.1038703E+01)
+
+       reference point = ( 0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #7
+
+       force  = (-0.4382024E+01 ,  0.1028330E+02 ,  0.9481008E+02)
+
+       torque = (-0.1228185E+00 ,  0.1672803E-02 ,  0.1069664E+01)
+
+       reference point = ( 0.0000000E+00 ,  0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #8
+
+       force  = (-0.2218231E+02 ,  0.2104608E+02 ,  0.1053208E+03)
+
+       torque = (-0.2247343E+00 , -0.3363380E+00 ,  0.1026417E+01)
+
+       reference point = (-0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #9
+
+       force  = (-0.1967199E+02 ,  0.3110950E+02 ,  0.9973062E+02)
+
+       torque = (-0.5977262E+00 , -0.2396744E+00 ,  0.1046845E+01)
+
+       reference point = (-0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #10
+
+       force  = (-0.8627562E+01 ,  0.9324134E+01 ,  0.9424167E+02)
+
+       torque = (-0.1617874E+00 , -0.6285799E-01 ,  0.1070020E+01)
+
+       reference point = (-0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #11
+
+       force  = ( 0.1018755E+02 ,  0.1280778E+02 ,  0.1079214E+03)
+
+       torque = (-0.1948432E+00 ,  0.1579153E+00 ,  0.1014919E+01)
+
+       reference point = (-0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #12
+
+       force  = ( 0.1654027E+02 ,  0.1442856E+02 ,  0.8655958E+02)
+
+       torque = (-0.3842831E+00 ,  0.3119364E+00 ,  0.1267109E+01)
+
+       reference point = (-0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+
+ 
+
+ Local shear rate (triggered by outputs)
+
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Postprocessors (triggered by outputs)
+
+
+
+ Dumping Temper. (triggered by outputs)
+
+
+ 
+ *** Step size information : ***
+ ===============================
+ S     = 1.9881250E-01, step #6
+ dSnew = 1.1390625E-01, okincr = T
+ tests = 6.4746130E-05
+ 
+
+
+ 
+ ***************************
+ ***   Starting Step 7   ***
+ ***************************
+   Parameters and Fields                        |   Progress bar(s)  |
+ Evolution parameter S     =  3.1271875E-01     |======>             |
+ Parameter a               =  6.3955231E-01     |================>   |
+ Parameter a               =  6.2543750E+02     |======>             |
+ Parameter scaling factor  =  3.1271875E-01     |======>             |
+ Field COORDINATES     
+ Field VEL_IMP#1       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#2       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#3       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#4       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#5       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#6       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#7       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#8       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#9       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP10       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP11       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP12       
+ Field MVPTS_VELOCITY  
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#1
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#2
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#3
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#4
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#5
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#6
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#7
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#8
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#9
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE10
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE11
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE12
+  (as the moving part is fixed, this field is unchanged)
+
+ F.E.M. Task
+
+           *** WARNING *** from [Check_overlapping]
+          Elements overlapped by several moving parts have been detected !
+          This situation can lead to pressure peaks and fluid leakage.
+          It is recommended to refine the flow domain mesh in those areas
+          or to check the position of the moving parts !
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Post globals
+
+  Reusing previous values of INSIDE_TOTAL
+  (as the moving part is fixed, this field is unchanged)
+
+
+  Flow rates
+
+  Flow rate = -1.1598253E-004   on (DOMAIN*INLET).
+  Flow rate =  1.1597358E-004   on (DOMAIN*OUTLET).
+  Flow rate =  0.0000000E+000   on (DOMAIN*WO).
+  Flow rate =  4.4059775E-021   on (DOMAIN*W_1).
+  Flow rate = -1.0534190E-021   on (DOMAIN*W_10).
+  Flow rate = -6.2664101E-021   on (DOMAIN*W_11).
+  Flow rate =  1.6950482E-020   on (DOMAIN*W_12).
+  Flow rate =  4.5068936E-021   on (DOMAIN*W_2).
+  Flow rate = -1.0073612E-020   on (DOMAIN*W_3).
+  Flow rate =  1.1286844E-020   on (DOMAIN*W_4).
+  Flow rate = -1.4342278E-021   on (DOMAIN*W_5).
+  Flow rate =  4.2020775E-022   on (DOMAIN*W_6).
+  Flow rate =  4.6528909E-022   on (DOMAIN*W_7).
+  Flow rate = -2.1017419E-020   on (DOMAIN*W_8).
+  Flow rate =  1.0191279E-020   on (DOMAIN*W_9).
+
+
+  Convected heat
+
+  Convected heat = -2.7068234E+004   on (DOMAIN*INLET).
+  Convected heat =  2.7066148E+004   on (DOMAIN*OUTLET).
+  Convected heat =  0.0000000E+000   on (DOMAIN*WO).
+  Convected heat = -3.1538747E-012   on (DOMAIN*W_1).
+  Convected heat =  7.1275388E-012   on (DOMAIN*W_10).
+  Convected heat =  5.1343272E-012   on (DOMAIN*W_11).
+  Convected heat = -3.0363483E-013   on (DOMAIN*W_12).
+  Convected heat =  8.6531520E-013   on (DOMAIN*W_2).
+  Convected heat = -4.5663104E-013   on (DOMAIN*W_3).
+  Convected heat =  2.0473048E-012   on (DOMAIN*W_4).
+  Convected heat = -1.6431000E-012   on (DOMAIN*W_5).
+  Convected heat = -2.3050849E-012   on (DOMAIN*W_6).
+  Convected heat = -1.5855594E-012   on (DOMAIN*W_7).
+  Convected heat = -5.9321523E-012   on (DOMAIN*W_8).
+  Convected heat =  7.5253237E-013   on (DOMAIN*W_9).
+
+
+  Total dissipated power
+
+  Dissipated power =  1.5888246E+002   on (DOMAIN).
+
+
+  Volume/Surface of the flow domains
+
+  Volume/Surface =  1.0893221E-004  on (DOMAIN).
+
+
+
+
+ *************************
+ *                       *
+ *    Post-Processors    *
+ *                       *
+ *************************
+
+ Total flux
+
+
+   flux = -0.5146330E-10    on (DOMAIN*INLET).
+   flux = -0.8615599E-15    on (DOMAIN*OUTLET).
+   flux =  0.0000000E+00    on (DOMAIN*WO).
+   flux =  0.0000000E+00    on (DOMAIN*W_1).
+   flux =  0.0000000E+00    on (DOMAIN*W_10).
+   flux =  0.0000000E+00    on (DOMAIN*W_11).
+   flux =  0.0000000E+00    on (DOMAIN*W_12).
+   flux =  0.0000000E+00    on (DOMAIN*W_2).
+   flux =  0.0000000E+00    on (DOMAIN*W_3).
+   flux =  0.0000000E+00    on (DOMAIN*W_4).
+   flux =  0.0000000E+00    on (DOMAIN*W_5).
+   flux =  0.0000000E+00    on (DOMAIN*W_6).
+   flux =  0.0000000E+00    on (DOMAIN*W_7).
+   flux =  0.0000000E+00    on (DOMAIN*W_8).
+   flux =  0.0000000E+00    on (DOMAIN*W_9).
+
+
+
+ Total force 
+
+
+
+ Force and Torque on moving part #1
+
+       force  = ( 0.8093355E+01 , -0.6102166E+01 ,  0.1030309E+03)
+
+       torque = ( 0.1136746E+00 ,  0.1580484E+00 ,  0.1032991E+01)
+
+       reference point = ( 0.0000000E+00 , -0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #2
+
+       force  = ( 0.2372332E+02 , -0.2326466E+02 ,  0.1040952E+03)
+
+       torque = ( 0.2561068E+00 ,  0.3398519E+00 ,  0.1025474E+01)
+
+       reference point = ( 0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #3
+
+       force  = ( 0.2273244E+02 , -0.3229452E+02 ,  0.1028728E+03)
+
+       torque = ( 0.6009250E+00 ,  0.2640382E+00 ,  0.1044158E+01)
+
+       reference point = ( 0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #4
+
+       force  = ( 0.2649458E+01 , -0.3425168E+01 ,  0.9822568E+02)
+
+       torque = ( 0.4206121E-01 , -0.1631900E-01 ,  0.1034757E+01)
+
+       reference point = ( 0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #5
+
+       force  = (-0.1187993E+02 , -0.1429197E+02 ,  0.1007124E+03)
+
+       torque = ( 0.2003724E+00 , -0.2068299E+00 ,  0.1042589E+01)
+
+       reference point = ( 0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #6
+
+       force  = (-0.7470678E+01 , -0.7864929E+01 ,  0.1020732E+03)
+
+       torque = ( 0.2214825E+00 , -0.7001414E-01 ,  0.1038712E+01)
+
+       reference point = ( 0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #7
+
+       force  = (-0.4382050E+01 ,  0.1028332E+02 ,  0.9481168E+02)
+
+       torque = (-0.1228148E+00 ,  0.1672753E-02 ,  0.1069671E+01)
+
+       reference point = ( 0.0000000E+00 ,  0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #8
+
+       force  = (-0.2218226E+02 ,  0.2104635E+02 ,  0.1053225E+03)
+
+       torque = (-0.2247334E+00 , -0.3363363E+00 ,  0.1026426E+01)
+
+       reference point = (-0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #9
+
+       force  = (-0.1967176E+02 ,  0.3110957E+02 ,  0.9973233E+02)
+
+       torque = (-0.5977250E+00 , -0.2396649E+00 ,  0.1046854E+01)
+
+       reference point = (-0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #10
+
+       force  = (-0.8627594E+01 ,  0.9324119E+01 ,  0.9424336E+02)
+
+       torque = (-0.1617878E+00 , -0.6285464E-01 ,  0.1070027E+01)
+
+       reference point = (-0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #11
+
+       force  = ( 0.1018731E+02 ,  0.1280781E+02 ,  0.1079232E+03)
+
+       torque = (-0.1948463E+00 ,  0.1579183E+00 ,  0.1014929E+01)
+
+       reference point = (-0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #12
+
+       force  = ( 0.1654014E+02 ,  0.1442887E+02 ,  0.8656102E+02)
+
+       torque = (-0.3842921E+00 ,  0.3119355E+00 ,  0.1267118E+01)
+
+       reference point = (-0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+
+ 
+
+ Local shear rate (triggered by outputs)
+
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Postprocessors (triggered by outputs)
+
+
+
+ Dumping Temper. (triggered by outputs)
+
+
+ 
+ *** Step size information : ***
+ ===============================
+ S     = 3.1271875E-01, step #7
+ dSnew = 1.7085938E-01, okincr = T
+ tests = 4.0990967E-05
+ 
+
+
+ 
+ ***************************
+ ***   Starting Step 8   ***
+ ***************************
+   Parameters and Fields                        |   Progress bar(s)  |
+ Evolution parameter S     =  4.8357813E-01     |=========>          |
+ Parameter a               =  4.1358364E-01     |=================>  |
+ Parameter a               =  9.6715625E+02     |=========>          |
+ Parameter scaling factor  =  4.8357813E-01     |=========>          |
+ Field COORDINATES     
+ Field VEL_IMP#1       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#2       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#3       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#4       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#5       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#6       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#7       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#8       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#9       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP10       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP11       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP12       
+ Field MVPTS_VELOCITY  
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#1
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#2
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#3
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#4
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#5
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#6
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#7
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#8
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#9
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE10
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE11
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE12
+  (as the moving part is fixed, this field is unchanged)
+
+ F.E.M. Task
+
+           *** WARNING *** from [Check_overlapping]
+          Elements overlapped by several moving parts have been detected !
+          This situation can lead to pressure peaks and fluid leakage.
+          It is recommended to refine the flow domain mesh in those areas
+          or to check the position of the moving parts !
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Post globals
+
+  Reusing previous values of INSIDE_TOTAL
+  (as the moving part is fixed, this field is unchanged)
+
+
+  Flow rates
+
+  Flow rate = -1.1598325E-004   on (DOMAIN*INLET).
+  Flow rate =  1.1597430E-004   on (DOMAIN*OUTLET).
+  Flow rate =  0.0000000E+000   on (DOMAIN*WO).
+  Flow rate =  4.1392118E-021   on (DOMAIN*W_1).
+  Flow rate = -1.0093663E-021   on (DOMAIN*W_10).
+  Flow rate = -6.2215356E-021   on (DOMAIN*W_11).
+  Flow rate =  1.6321101E-020   on (DOMAIN*W_12).
+  Flow rate =  4.4403055E-021   on (DOMAIN*W_2).
+  Flow rate = -1.0123036E-020   on (DOMAIN*W_3).
+  Flow rate =  1.1288725E-020   on (DOMAIN*W_4).
+  Flow rate = -1.6501219E-021   on (DOMAIN*W_5).
+  Flow rate =  4.8969092E-022   on (DOMAIN*W_6).
+  Flow rate =  3.6726819E-022   on (DOMAIN*W_7).
+  Flow rate = -2.1713491E-020   on (DOMAIN*W_8).
+  Flow rate =  1.0043627E-020   on (DOMAIN*W_9).
+
+
+  Convected heat
+
+  Convected heat = -4.1857698E+004   on (DOMAIN*INLET).
+  Convected heat =  4.1854472E+004   on (DOMAIN*OUTLET).
+  Convected heat =  0.0000000E+000   on (DOMAIN*WO).
+  Convected heat =  2.8180149E-012   on (DOMAIN*W_1).
+  Convected heat =  1.1060985E-011   on (DOMAIN*W_10).
+  Convected heat =  7.4757875E-012   on (DOMAIN*W_11).
+  Convected heat = -3.4980240E-012   on (DOMAIN*W_12).
+  Convected heat = -5.9262968E-013   on (DOMAIN*W_2).
+  Convected heat = -8.6230654E-013   on (DOMAIN*W_3).
+  Convected heat =  3.1670545E-012   on (DOMAIN*W_4).
+  Convected heat = -2.7459956E-012   on (DOMAIN*W_5).
+  Convected heat = -1.3756062E-012   on (DOMAIN*W_6).
+  Convected heat = -8.6946552E-013   on (DOMAIN*W_7).
+  Convected heat = -9.5221695E-012   on (DOMAIN*W_8).
+  Convected heat =  8.5045404E-013   on (DOMAIN*W_9).
+
+
+  Total dissipated power
+
+  Dissipated power =  2.4569048E+002   on (DOMAIN).
+
+
+  Volume/Surface of the flow domains
+
+  Volume/Surface =  1.0893221E-004  on (DOMAIN).
+
+
+
+
+ *************************
+ *                       *
+ *    Post-Processors    *
+ *                       *
+ *************************
+
+ Total flux
+
+
+   flux = -0.5146332E-10    on (DOMAIN*INLET).
+   flux = -0.8615849E-15    on (DOMAIN*OUTLET).
+   flux =  0.0000000E+00    on (DOMAIN*WO).
+   flux =  0.0000000E+00    on (DOMAIN*W_1).
+   flux =  0.0000000E+00    on (DOMAIN*W_10).
+   flux =  0.0000000E+00    on (DOMAIN*W_11).
+   flux =  0.0000000E+00    on (DOMAIN*W_12).
+   flux =  0.0000000E+00    on (DOMAIN*W_2).
+   flux =  0.0000000E+00    on (DOMAIN*W_3).
+   flux =  0.0000000E+00    on (DOMAIN*W_4).
+   flux =  0.0000000E+00    on (DOMAIN*W_5).
+   flux =  0.0000000E+00    on (DOMAIN*W_6).
+   flux =  0.0000000E+00    on (DOMAIN*W_7).
+   flux =  0.0000000E+00    on (DOMAIN*W_8).
+   flux =  0.0000000E+00    on (DOMAIN*W_9).
+
+
+
+ Total force 
+
+
+
+ Force and Torque on moving part #1
+
+       force  = ( 0.8093398E+01 , -0.6102146E+01 ,  0.1030319E+03)
+
+       torque = ( 0.1136717E+00 ,  0.1580492E+00 ,  0.1032995E+01)
+
+       reference point = ( 0.0000000E+00 , -0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #2
+
+       force  = ( 0.2372335E+02 , -0.2326481E+02 ,  0.1040962E+03)
+
+       torque = ( 0.2561057E+00 ,  0.3398518E+00 ,  0.1025480E+01)
+
+       reference point = ( 0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #3
+
+       force  = ( 0.2273237E+02 , -0.3229457E+02 ,  0.1028739E+03)
+
+       torque = ( 0.6009244E+00 ,  0.2640334E+00 ,  0.1044164E+01)
+
+       reference point = ( 0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #4
+
+       force  = ( 0.2649444E+01 , -0.3425175E+01 ,  0.9822672E+02)
+
+       torque = ( 0.4206147E-01 , -0.1632158E-01 ,  0.1034761E+01)
+
+       reference point = ( 0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #5
+
+       force  = (-0.1187978E+02 , -0.1429199E+02 ,  0.1007134E+03)
+
+       torque = ( 0.2003740E+00 , -0.2068318E+00 ,  0.1042595E+01)
+
+       reference point = ( 0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #6
+
+       force  = (-0.7470722E+01 , -0.7865140E+01 ,  0.1020743E+03)
+
+       torque = ( 0.2214889E+00 , -0.7001556E-01 ,  0.1038719E+01)
+
+       reference point = ( 0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #7
+
+       force  = (-0.4382066E+01 ,  0.1028333E+02 ,  0.9481267E+02)
+
+       torque = (-0.1228126E+00 ,  0.1672723E-02 ,  0.1069675E+01)
+
+       reference point = ( 0.0000000E+00 ,  0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #8
+
+       force  = (-0.2218223E+02 ,  0.2104651E+02 ,  0.1053235E+03)
+
+       torque = (-0.2247328E+00 , -0.3363352E+00 ,  0.1026432E+01)
+
+       reference point = (-0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #9
+
+       force  = (-0.1967162E+02 ,  0.3110960E+02 ,  0.9973339E+02)
+
+       torque = (-0.5977242E+00 , -0.2396590E+00 ,  0.1046860E+01)
+
+       reference point = (-0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #10
+
+       force  = (-0.8627614E+01 ,  0.9324108E+01 ,  0.9424440E+02)
+
+       torque = (-0.1617880E+00 , -0.6285259E-01 ,  0.1070031E+01)
+
+       reference point = (-0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #11
+
+       force  = ( 0.1018717E+02 ,  0.1280783E+02 ,  0.1079243E+03)
+
+       torque = (-0.1948482E+00 ,  0.1579201E+00 ,  0.1014935E+01)
+
+       reference point = (-0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #12
+
+       force  = ( 0.1654006E+02 ,  0.1442905E+02 ,  0.8656190E+02)
+
+       torque = (-0.3842976E+00 ,  0.3119350E+00 ,  0.1267124E+01)
+
+       reference point = (-0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+
+ 
+
+ Local shear rate (triggered by outputs)
+
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Postprocessors (triggered by outputs)
+
+
+
+ Dumping Temper. (triggered by outputs)
+
+
+ 
+ *** Step size information : ***
+ ===============================
+ S     = 4.8357813E-01, step #8
+ dSnew = 2.5000000E-01, okincr = T
+ tests = 2.5944797E-05
+ 
+
+
+ 
+ ***************************
+ ***   Starting Step 9   ***
+ ***************************
+   Parameters and Fields                        |   Progress bar(s)  |
+ Evolution parameter S     =  7.3357813E-01     |==============>     |
+ Parameter a               =  2.7263626E-01     |===================>|
+ Parameter a               =  1.4671563E+03     |==============>     |
+ Parameter scaling factor  =  7.3357813E-01     |==============>     |
+ Field COORDINATES     
+ Field VEL_IMP#1       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#2       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#3       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#4       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#5       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#6       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#7       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#8       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#9       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP10       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP11       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP12       
+ Field MVPTS_VELOCITY  
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#1
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#2
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#3
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#4
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#5
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#6
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#7
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#8
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#9
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE10
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE11
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE12
+  (as the moving part is fixed, this field is unchanged)
+
+ F.E.M. Task
+
+           *** WARNING *** from [Check_overlapping]
+          Elements overlapped by several moving parts have been detected !
+          This situation can lead to pressure peaks and fluid leakage.
+          It is recommended to refine the flow domain mesh in those areas
+          or to check the position of the moving parts !
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Post globals
+
+  Reusing previous values of INSIDE_TOTAL
+  (as the moving part is fixed, this field is unchanged)
+
+
+  Flow rates
+
+  Flow rate = -1.1598369E-004   on (DOMAIN*INLET).
+  Flow rate =  1.1597474E-004   on (DOMAIN*OUTLET).
+  Flow rate =  0.0000000E+000   on (DOMAIN*WO).
+  Flow rate =  4.2959625E-021   on (DOMAIN*W_1).
+  Flow rate = -1.0502795E-021   on (DOMAIN*W_10).
+  Flow rate = -6.4281239E-021   on (DOMAIN*W_11).
+  Flow rate =  1.6609890E-020   on (DOMAIN*W_12).
+  Flow rate =  4.5854757E-021   on (DOMAIN*W_2).
+  Flow rate = -9.9077626E-021   on (DOMAIN*W_3).
+  Flow rate =  1.1286385E-020   on (DOMAIN*W_4).
+  Flow rate = -1.3805644E-021   on (DOMAIN*W_5).
+  Flow rate =  2.8124141E-022   on (DOMAIN*W_6).
+  Flow rate =  4.1483108E-022   on (DOMAIN*W_7).
+  Flow rate = -2.1091038E-020   on (DOMAIN*W_8).
+  Flow rate =  1.0001854E-020   on (DOMAIN*W_9).
+
+
+  Convected heat
+
+  Convected heat = -6.3497513E+004   on (DOMAIN*INLET).
+  Convected heat =  6.3492618E+004   on (DOMAIN*OUTLET).
+  Convected heat =  0.0000000E+000   on (DOMAIN*WO).
+  Convected heat =  3.7086133E-013   on (DOMAIN*W_1).
+  Convected heat =  1.6599199E-011   on (DOMAIN*W_10).
+  Convected heat =  9.8362882E-012   on (DOMAIN*W_11).
+  Convected heat = -9.5632279E-012   on (DOMAIN*W_12).
+  Convected heat = -5.8285972E-013   on (DOMAIN*W_2).
+  Convected heat = -1.1191011E-012   on (DOMAIN*W_3).
+  Convected heat =  4.6835215E-012   on (DOMAIN*W_4).
+  Convected heat = -3.5479097E-012   on (DOMAIN*W_5).
+  Convected heat = -2.6692381E-012   on (DOMAIN*W_6).
+  Convected heat = -7.4312214E-013   on (DOMAIN*W_7).
+  Convected heat = -1.5860877E-011   on (DOMAIN*W_8).
+  Convected heat =  5.7722815E-013   on (DOMAIN*W_9).
+
+
+  Total dissipated power
+
+  Dissipated power =  3.7270723E+002   on (DOMAIN).
+
+
+  Volume/Surface of the flow domains
+
+  Volume/Surface =  1.0893221E-004  on (DOMAIN).
+
+
+
+
+ *************************
+ *                       *
+ *    Post-Processors    *
+ *                       *
+ *************************
+
+ Total flux
+
+
+   flux = -0.5146333E-10    on (DOMAIN*INLET).
+   flux = -0.8616010E-15    on (DOMAIN*OUTLET).
+   flux =  0.0000000E+00    on (DOMAIN*WO).
+   flux =  0.0000000E+00    on (DOMAIN*W_1).
+   flux =  0.0000000E+00    on (DOMAIN*W_10).
+   flux =  0.0000000E+00    on (DOMAIN*W_11).
+   flux =  0.0000000E+00    on (DOMAIN*W_12).
+   flux =  0.0000000E+00    on (DOMAIN*W_2).
+   flux =  0.0000000E+00    on (DOMAIN*W_3).
+   flux =  0.0000000E+00    on (DOMAIN*W_4).
+   flux =  0.0000000E+00    on (DOMAIN*W_5).
+   flux =  0.0000000E+00    on (DOMAIN*W_6).
+   flux =  0.0000000E+00    on (DOMAIN*W_7).
+   flux =  0.0000000E+00    on (DOMAIN*W_8).
+   flux =  0.0000000E+00    on (DOMAIN*W_9).
+
+
+
+ Total force 
+
+
+
+ Force and Torque on moving part #1
+
+       force  = ( 0.8093423E+01 , -0.6102134E+01 ,  0.1030326E+03)
+
+       torque = ( 0.1136700E+00 ,  0.1580496E+00 ,  0.1032998E+01)
+
+       reference point = ( 0.0000000E+00 , -0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #2
+
+       force  = ( 0.2372336E+02 , -0.2326490E+02 ,  0.1040969E+03)
+
+       torque = ( 0.2561050E+00 ,  0.3398518E+00 ,  0.1025484E+01)
+
+       reference point = ( 0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #3
+
+       force  = ( 0.2273232E+02 , -0.3229459E+02 ,  0.1028746E+03)
+
+       torque = ( 0.6009239E+00 ,  0.2640304E+00 ,  0.1044168E+01)
+
+       reference point = ( 0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #4
+
+       force  = ( 0.2649436E+01 , -0.3425178E+01 ,  0.9822737E+02)
+
+       torque = ( 0.4206162E-01 , -0.1632315E-01 ,  0.1034764E+01)
+
+       reference point = ( 0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #5
+
+       force  = (-0.1187969E+02 , -0.1429200E+02 ,  0.1007141E+03)
+
+       torque = ( 0.2003749E+00 , -0.2068329E+00 ,  0.1042599E+01)
+
+       reference point = ( 0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #6
+
+       force  = (-0.7470750E+01 , -0.7865268E+01 ,  0.1020749E+03)
+
+       torque = ( 0.2214928E+00 , -0.7001644E-01 ,  0.1038722E+01)
+
+       reference point = ( 0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #7
+
+       force  = (-0.4382075E+01 ,  0.1028334E+02 ,  0.9481328E+02)
+
+       torque = (-0.1228112E+00 ,  0.1672710E-02 ,  0.1069678E+01)
+
+       reference point = ( 0.0000000E+00 ,  0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #8
+
+       force  = (-0.2218221E+02 ,  0.2104660E+02 ,  0.1053242E+03)
+
+       torque = (-0.2247324E+00 , -0.3363346E+00 ,  0.1026436E+01)
+
+       reference point = (-0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #9
+
+       force  = (-0.1967153E+02 ,  0.3110962E+02 ,  0.9973404E+02)
+
+       torque = (-0.5977236E+00 , -0.2396554E+00 ,  0.1046864E+01)
+
+       reference point = (-0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #10
+
+       force  = (-0.8627626E+01 ,  0.9324100E+01 ,  0.9424504E+02)
+
+       torque = (-0.1617881E+00 , -0.6285134E-01 ,  0.1070034E+01)
+
+       reference point = (-0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #11
+
+       force  = ( 0.1018707E+02 ,  0.1280784E+02 ,  0.1079250E+03)
+
+       torque = (-0.1948492E+00 ,  0.1579212E+00 ,  0.1014939E+01)
+
+       reference point = (-0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #12
+
+       force  = ( 0.1654002E+02 ,  0.1442917E+02 ,  0.8656244E+02)
+
+       torque = (-0.3843009E+00 ,  0.3119348E+00 ,  0.1267127E+01)
+
+       reference point = (-0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+
+ 
+
+ Local shear rate (triggered by outputs)
+
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Postprocessors (triggered by outputs)
+
+
+
+ Dumping Temper. (triggered by outputs)
+
+
+ 
+ *** Step size information : ***
+ ===============================
+ S     = 7.3357813E-01, step #9
+ dSnew = 2.6642187E-01, okincr = T
+ tests = 1.6521664E-05
+ 
+
+
+ 
+ ****************************
+ ***   Starting Step 10   ***
+ ****************************
+   Parameters and Fields                        |   Progress bar(s)  |
+ Evolution parameter S     =  1.0000000E+00     |====================|
+ Parameter a               =  2.0000000E-01     |====================|
+ Parameter a               =  2.0000000E+03     |====================|
+ Parameter scaling factor  =  1.0000000E+00     |====================|
+ Field COORDINATES     
+ Field VEL_IMP#1       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#2       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#3       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#4       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#5       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#6       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#7       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#8       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP#9       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP10       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP11       
+ Field MVPTS_VELOCITY  
+ Field COORDINATES     
+ Field VEL_IMP12       
+ Field MVPTS_VELOCITY  
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#1
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#2
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#3
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#4
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#5
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#6
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#7
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#8
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE#9
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE10
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE11
+  (as the moving part is fixed, this field is unchanged)
+
+ Preprocessors
+
+  Reusing previous values of INSIDE12
+  (as the moving part is fixed, this field is unchanged)
+
+ F.E.M. Task
+
+           *** WARNING *** from [Check_overlapping]
+          Elements overlapped by several moving parts have been detected !
+          This situation can lead to pressure peaks and fluid leakage.
+          It is recommended to refine the flow domain mesh in those areas
+          or to check the position of the moving parts !
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Post globals
+
+  Reusing previous values of INSIDE_TOTAL
+  (as the moving part is fixed, this field is unchanged)
+
+
+  Flow rates
+
+  Flow rate = -1.1598395E-004   on (DOMAIN*INLET).
+  Flow rate =  1.1597501E-004   on (DOMAIN*OUTLET).
+  Flow rate =  0.0000000E+000   on (DOMAIN*WO).
+  Flow rate =  4.4527132E-021   on (DOMAIN*W_1).
+  Flow rate = -1.0153884E-021   on (DOMAIN*W_10).
+  Flow rate = -6.3653616E-021   on (DOMAIN*W_11).
+  Flow rate =  1.5996225E-020   on (DOMAIN*W_12).
+  Flow rate =  4.5188877E-021   on (DOMAIN*W_2).
+  Flow rate = -1.0010126E-020   on (DOMAIN*W_3).
+  Flow rate =  1.1288383E-020   on (DOMAIN*W_4).
+  Flow rate = -1.8171090E-021   on (DOMAIN*W_5).
+  Flow rate =  3.5072458E-022   on (DOMAIN*W_6).
+  Flow rate =  4.6239396E-022   on (DOMAIN*W_7).
+  Flow rate = -2.1363594E-020   on (DOMAIN*W_8).
+  Flow rate =  1.0209063E-020   on (DOMAIN*W_9).
+
+
+  Convected heat
+
+  Convected heat = -8.6558825E+004   on (DOMAIN*INLET).
+  Convected heat =  8.6552152E+004   on (DOMAIN*OUTLET).
+  Convected heat =  0.0000000E+000   on (DOMAIN*WO).
+  Convected heat =  4.1256356E-012   on (DOMAIN*W_1).
+  Convected heat =  2.2844174E-011   on (DOMAIN*W_10).
+  Convected heat =  1.6644453E-011   on (DOMAIN*W_11).
+  Convected heat = -1.1821366E-011   on (DOMAIN*W_12).
+  Convected heat =  1.1741792E-012   on (DOMAIN*W_2).
+  Convected heat = -2.1143050E-012   on (DOMAIN*W_3).
+  Convected heat =  6.6118529E-012   on (DOMAIN*W_4).
+  Convected heat = -4.1991665E-012   on (DOMAIN*W_5).
+  Convected heat = -1.1237495E-011   on (DOMAIN*W_6).
+  Convected heat = -2.7943702E-012   on (DOMAIN*W_7).
+  Convected heat = -1.7847288E-011   on (DOMAIN*W_8).
+  Convected heat =  9.4715446E-013   on (DOMAIN*W_9).
+
+
+  Total dissipated power
+
+  Dissipated power =  5.0806736E+002   on (DOMAIN).
+
+
+  Volume/Surface of the flow domains
+
+  Volume/Surface =  1.0893221E-004  on (DOMAIN).
+
+
+
+
+ *************************
+ *                       *
+ *    Post-Processors    *
+ *                       *
+ *************************
+
+ Total flux
+
+
+   flux = -0.5146333E-10    on (DOMAIN*INLET).
+   flux = -0.8616114E-15    on (DOMAIN*OUTLET).
+   flux =  0.0000000E+00    on (DOMAIN*WO).
+   flux =  0.0000000E+00    on (DOMAIN*W_1).
+   flux =  0.0000000E+00    on (DOMAIN*W_10).
+   flux =  0.0000000E+00    on (DOMAIN*W_11).
+   flux =  0.0000000E+00    on (DOMAIN*W_12).
+   flux =  0.0000000E+00    on (DOMAIN*W_2).
+   flux =  0.0000000E+00    on (DOMAIN*W_3).
+   flux =  0.0000000E+00    on (DOMAIN*W_4).
+   flux =  0.0000000E+00    on (DOMAIN*W_5).
+   flux =  0.0000000E+00    on (DOMAIN*W_6).
+   flux =  0.0000000E+00    on (DOMAIN*W_7).
+   flux =  0.0000000E+00    on (DOMAIN*W_8).
+   flux =  0.0000000E+00    on (DOMAIN*W_9).
+
+
+
+ Total force 
+
+
+
+ Force and Torque on moving part #1
+
+       force  = ( 0.8093437E+01 , -0.6102128E+01 ,  0.1030329E+03)
+
+       torque = ( 0.1136689E+00 ,  0.1580499E+00 ,  0.1032999E+01)
+
+       reference point = ( 0.0000000E+00 , -0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #2
+
+       force  = ( 0.2372337E+02 , -0.2326495E+02 ,  0.1040973E+03)
+
+       torque = ( 0.2561046E+00 ,  0.3398518E+00 ,  0.1025486E+01)
+
+       reference point = ( 0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #3
+
+       force  = ( 0.2273230E+02 , -0.3229461E+02 ,  0.1028750E+03)
+
+       torque = ( 0.6009236E+00 ,  0.2640286E+00 ,  0.1044170E+01)
+
+       reference point = ( 0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #4
+
+       force  = ( 0.2649431E+01 , -0.3425179E+01 ,  0.9822777E+02)
+
+       torque = ( 0.4206170E-01 , -0.1632411E-01 ,  0.1034765E+01)
+
+       reference point = ( 0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #5
+
+       force  = (-0.1187963E+02 , -0.1429201E+02 ,  0.1007145E+03)
+
+       torque = ( 0.2003755E+00 , -0.2068335E+00 ,  0.1042602E+01)
+
+       reference point = ( 0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #6
+
+       force  = (-0.7470768E+01 , -0.7865346E+01 ,  0.1020753E+03)
+
+       torque = ( 0.2214952E+00 , -0.7001699E-01 ,  0.1038725E+01)
+
+       reference point = ( 0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #7
+
+       force  = (-0.4382081E+01 ,  0.1028334E+02 ,  0.9481365E+02)
+
+       torque = (-0.1228103E+00 ,  0.1672708E-02 ,  0.1069679E+01)
+
+       reference point = ( 0.0000000E+00 ,  0.4249400E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #8
+
+       force  = (-0.2218220E+02 ,  0.2104666E+02 ,  0.1053246E+03)
+
+       torque = (-0.2247322E+00 , -0.3363343E+00 ,  0.1026438E+01)
+
+       reference point = (-0.2134700E-01 ,  0.3680100E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #9
+
+       force  = (-0.1967148E+02 ,  0.3110962E+02 ,  0.9973444E+02)
+
+       torque = (-0.5977232E+00 , -0.2396532E+00 ,  0.1046866E+01)
+
+       reference point = (-0.3697400E-01 ,  0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #10
+
+       force  = (-0.8627633E+01 ,  0.9324095E+01 ,  0.9424544E+02)
+
+       torque = (-0.1617881E+00 , -0.6285058E-01 ,  0.1070036E+01)
+
+       reference point = (-0.4269400E-01 ,  0.0000000E+00 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #11
+
+       force  = ( 0.1018702E+02 ,  0.1280785E+02 ,  0.1079255E+03)
+
+       torque = (-0.1948499E+00 ,  0.1579219E+00 ,  0.1014941E+01)
+
+       reference point = (-0.3697400E-01 , -0.2124700E-01 ,  0.0000000E+00)
+
+
+
+ Force and Torque on moving part #12
+
+       force  = ( 0.1653999E+02 ,  0.1442923E+02 ,  0.8656277E+02)
+
+       torque = (-0.3843029E+00 ,  0.3119346E+00 ,  0.1267129E+01)
+
+       reference point = (-0.2134700E-01 , -0.3680100E-01 ,  0.0000000E+00)
+
+
+
+
+ 
+
+ Local shear rate (triggered by outputs)
+
+
+ Convergence assumed : Rel. var. LT  1.00000E-03
+
+ Postprocessors (triggered by outputs)
+
+
+
+ Dumping Temper. (triggered by outputs)
+
+
+ 
+ *** Step size information : ***
+ ===============================
+ S     = 1.0000000E+00, step #10
+ dSnew = 2.5000000E-01, okincr = T
+ tests = 1.0551826E-05
+ 
+ ===> Sfin has been reached. Stop.
+ =================================
+ 
+ 
+
+
+
+
+
+
+
+*************************
+*                       *
+*      STATISTICS       *
+*                       *
+*************************
+
+
+
+ 
+ Memory information : Global usage before end
+    PID                      :      22588
+    Max Virtual Memory       :      21846 Mbytes
+ 
+      including
+      - Initial Memory       :       4936 Mbytes
+      - Additional Memory    :      16910 Mbytes
+
+ Time information :
+    CPU time     :    21800.6 sec.
+    Elapsed time :    21801.0 sec.
+
+ Parallelism information : 
+    Algo. parallelism        :       22.6
+    Max procs                :        0.0
+
+ CPU MONITOR                                      :      cpu   /    elapsed   (# calls)
+                                                        [sec]  /     [sec]
+   POLYFLOW                                       :  21800.690 /  21800.690         (1)
+     TOPO                                         :      8.895 /      8.895         (1)
+     FIELDS                                       :      7.029 /      7.028         (1)
+     Check license                                :      0.724 /      0.724        (12)
+     EVOLUT                                       :  21779.025 /  21779.025         (1)
+       CCONTR                                     :   1029.733 /   1029.735       (290)
+       SOLVR                                      :  15900.745 /  15900.755       (300)
+         Prediag                                  :    234.832 /    234.835       (150)
+           DescrElement                           :    230.452 /    230.445       (150)
+         diagonalSolver                           :    493.418 /    493.413       (150)
+           MatrixConstruction                     :    492.017 /    492.019       (150)
+             LocalMatrices                        :    418.764 /    418.618  (27833800)
+         ComputeInsideFields                      :    852.893 /    852.891        (13)
+         Preitr                                   :    485.197 /    485.201        (20)
+           DescrElement                           :    402.275 /    402.276        (20)
+             describeAnElementLS                  :     85.942 /     85.603  (68165600)
+           createConnectivityBlocksLS             :     80.773 /     80.776        (20)
+         Itrslv                                   :  12989.618 /  12989.617        (50)
+           MatrixConstruction                     :   8358.974 /   8358.976        (50)
+             LocalMatrices                        :   5175.635 /   5175.314 (270545800)
+               MeshQuality                        :     42.867 /     42.698  (21040000)
+           ItrslvSolve                            :   4619.335 /   4619.336        (50)
+             SolveGlobalAssembly                  :     64.105 /     64.104        (30)
+             DLRU                                 :    267.567 /    267.574        (30)
+               Optimization                       :    105.227 /    105.228        (30)
+                 Permutation                      :     50.979 /     50.979         (3)
+                   Build elimination order        :     50.979 /     50.979         (3)
+                     Symmetrisation               :      0.697 /      0.697         (3)
+                     Metis                        :     47.981 /     47.981         (3)
+                 Delaying                         :     42.482 /     42.482         (3)
+                   Apply delaying                 :     41.929 /     41.929         (2)
+                     delayLastDualAfterLastPrimal :      0.663 /      0.663         (2)
+             Factorize                            :   4224.364 /   4224.363        (30)
+               Symbolic pass                      :     43.675 /     43.642  (12597209)
+               Optimize active matrix ordering    :     12.320 /     12.317        (60)
+               Merge matrix to reach AM size      :     33.139 /     33.142        (30)
+               ActiveMatrixAllocate               :    168.255 /    168.163    (628884)
+               NumericPass                        :   3882.720 /   3882.765    (628884)
+                 activeMatrixInitialize           :    362.384 /    362.147    (628884)
+                 activeMatrixAssemble             :    870.249 /    870.370    (628884)
+                 FactoOnCPU                       :   2648.246 /   2648.362    (628884)
+                   evaluateRPGF                   :     72.804 /     73.068    (896565)
+                   evacuatePivotUpper             :    100.560 /    100.251    (896565)
+                     BUFFER_CopyWrite             :     30.960 /     30.886     (24674)
+               BUFFER_CopyWrite                   :      0.032 /      0.033        (30)
+             BackSub                              :     42.085 /     42.084        (30)
+               BUFFER_CopyRead                    :     13.151 /     13.087     (24704)
+           ItrslvEnd                              :      1.892 /      1.896        (50)
+         Build acceleration tables for mapping    :     18.361 /     18.358       (120)
+         Mapping                                  :     10.005 /     10.005       (120)
+       generate outputs                           :   1601.611 /   1601.609        (20)
+     Stat                                         :      0.523 /      0.523         (1)
+
+Stop. Normal end of Polyflow
+
+
+     *******************************
+     *  Summary of the simulation  *
+     *******************************
+
+        The computation succeeded.
+
+
+     ************************************************************
+     *  Expert tool advice in order to optimize the simulation  *
+     ************************************************************
+
+     During the evolution no step has failed.  The next time you run a 
+     similar calculation,  maybe it could be interesting to start the 
+     evolution with a larger initial step size and a larger maximum step 
+     size.
