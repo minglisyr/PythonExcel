@@ -1,58 +1,56 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy.interpolate
+from scipy import interpolate
 
 # load the file
-xyz = np.genfromtxt('dataset.txt')
+xyz = np.genfromtxt('dataset-KB30.txt')
 
 # Define the query point (VFRq,RPMq)
-VFRq= 10
-RPMq= 160
+VFRq = 30
+RPMq = 150
 
-#Define the plot ranges
-VFRmin=-45
-VFRmax=105
-RPMmin=90
-RPMmax=215
-dPmin=-35
-dPmax=15
+# Define the plot ranges
+dx = round((np.max(xyz[:, 0]) - np.min(xyz[:, 0])) / 20)
+dy = round((np.max(xyz[:, 1]) - np.min(xyz[:, 1])) / 20)
+dz = round((np.max(xyz[:, 1]) - np.min(xyz[:, 1])) / 20)
 
-# Create a 2D interpolator to calculate the intenisity at any position
-interp = scipy.interpolate.CloughTocher2DInterpolator(xyz[:,:2], xyz[:,2])
-Zq=interp(VFRq,RPMq)
+VFRmin = dx * (round(np.min(xyz[:, 0]) / dx) - 1)
+VFRmax = dx * (round(np.max(xyz[:, 0]) / dx) + 1)
+
+RPMmin = dy * (round(np.min(xyz[:, 1]) / dy) - 1)
+RPMmax = dy * (round(np.max(xyz[:, 1]) / dy) + 1)
+dPmin = dz * (round(np.min(xyz[:, 2]) / dz) - 1)
+dPmax = dz * (round(np.max(xyz[:, 2]) / dz) + 1)
+
+# Create a 2D interpolator to calculate the z-value at any position
+interp = interpolate.CloughTocher2DInterpolator(xyz[:,:2], xyz[:,2])
+Zq = interp(VFRq, RPMq)
 
 # Plot
-fig, ax = plt.subplots(figsize=[16, 8])  # Create a single subplot
-
+fig, ax = plt.subplots(figsize=[12, 8])  # Create a single subplot
 
 # Override the format_coord method to display x, y, and z values
 def fmt(x, y):
-    z = np.take(interp(x, y), 0)
+    z = interp(x, y).item()
     return f'x={x:.5f}  y={y:.5f}  z={z:.5f}'
 
-plt.gca().format_coord = fmt
+ax.format_coord = fmt
 
 # Scatter plot with tricontourf
 cb = ax.tricontourf(xyz[:, 0], xyz[:, 1], xyz[:, 2], levels=20, vmin=dPmin, vmax=dPmax)
 plt.colorbar(cb, ax=ax, label='dP (bar)')
-plt.axis([VFRmin,VFRmax,RPMmin,RPMmax])  # Adjust axis limits as needed
+ax.set_xlim(VFRmin, VFRmax)
+ax.set_ylim(RPMmin, RPMmax)
 
-# Plot the query point with its Z-value
-plt.plot(VFRq, RPMq, 'ok') 
-plt.annotate(f'dP ={Zq:.2f} \n @(VFR= {VFRq:.2f},RPM={RPMq:.0f})', xy=(VFRq, RPMq), xytext=(VFRq + 1, RPMq + 1), color='black')
-
-# Draw dashed lines to X and Y axes
-plt.plot([VFRq, VFRq], [RPMq, RPMmin], linestyle='--', color='gray')
-plt.plot([VFRq, VFRmin], [RPMq, RPMq], linestyle='--', color='gray')
-
-# Scatter the original data points
-ax.xaxis.set_ticks(np.arange(VFRmin, VFRmax, 5))
-ax.yaxis.set_ticks(np.arange(RPMmin, RPMmax, 30))
+# Set axis ticks and labels
+ax.set_xticks(np.arange(VFRmin, VFRmax, dx))
+ax.set_yticks(np.arange(RPMmin, RPMmax, dy))
 ax.set_xlabel('VFR (cm^3/s)')
 ax.set_ylabel('RPM')
+
+# Scatter the original data points
 ax.scatter(xyz[:,0], xyz[:,1], color='black', alpha=.5, s=30, marker='x')
-    
-    
+
 ax.set_title('dP surface')
 
 plt.show()

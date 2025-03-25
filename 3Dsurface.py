@@ -3,13 +3,13 @@ import plotly.graph_objects as go
 
 
 # Load data from the text file
-data = np.loadtxt('dataset.txt')
+data = np.loadtxt('dataset-KB30.txt')
 
 # Assuming your data is organized as [x1, y1, z1; x2, y2, z2; ...]
 x, y, z = data[:, 0], data[:, 1], data[:, 2]
 
 # Create a 3D surface plot
-fig = go.Figure(data=go.Scatter3d(x=x, y=y, z=z, mode='markers',marker=dict(size=5,color=z,colorscale='Blackbody',opacity=0.8)))
+fig = go.Figure(data=go.Scatter3d(x=x, y=y, z=z, mode='markers',marker=dict(size=5,color=z,colorscale='Viridis',opacity=0.8)))
 
 # Customize the plot (add labels, title, etc.)
 fig.update_layout(
@@ -46,3 +46,5 @@ z0 = linear_interpolation(x0, y0, x[idx1], y[idx1], x[idx2], y[idx2], z[idx1], z
 print(idx1,idx2)
 
 print(f"Interpolated z0 at ({x0}, {y0}): {z0:.2f}")
+
+print(data)

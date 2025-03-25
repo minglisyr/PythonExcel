@@ -33,6 +33,12 @@ torque_z = dict(sorted(torque_z.items()))
 
 last_12_values = torque_z['1'][-12:]
 
+output_filename = "torque_values.txt"
+
 # Print the formatted output
-for i, value in enumerate(last_12_values, start=1):
-    print(f"Torque#{i} {value:.6f}")
+with open(output_filename, "w") as file:
+    for i, value in enumerate(last_12_values, start=1):
+        file.write(f"Torque#{i} {value:.6f}\n")
+        print(f"Torque#{i} {value:.6f}")
+
+print(f"Torque values written to {output_filename}")
