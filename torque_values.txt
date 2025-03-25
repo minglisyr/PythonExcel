@@ -1,0 +1,12 @@
+Torque#1 1.032999
+Torque#2 1.025486
+Torque#3 1.044170
+Torque#4 1.034765
+Torque#5 1.042602
+Torque#6 1.038725
+Torque#7 1.069679
+Torque#8 1.026438
+Torque#9 1.046866
+Torque#10 1.070036
+Torque#11 1.014941
+Torque#12 1.267129
