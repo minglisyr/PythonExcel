@@ -100,7 +100,6 @@ process_columns('processed_test.csv', 'final_processed_test.csv')
 df = pd.read_csv('final_processed_test.csv')
 
 df = df.drop(index=0)
-df = df.dropna()
 
 # Replace all 'Time_*' column names with 'Time [s]'
 df.columns = [col if not col.startswith('Time_') else 'Time [s]' for col in df.columns]
@@ -112,4 +111,29 @@ STR = extract_names('test.csv')
 for i, col in enumerate(value_columns):
     df.rename(columns={col: STR[i]}, inplace=True)
 
-df.to_excel('final_processed_test.xlsx', index=False)
+# Identify time and temperature columns
+time_columns = [col for col in df.columns if 'Time' in col]
+temp_columns = [col for col in df.columns if 'Temp' in col]
+
+# Convert time columns from seconds to minutes
+for col in time_columns:    
+    for index, value in df[col].items():
+        try:
+            df.loc[index, col] = value / 60
+        except (ValueError, TypeError):
+            # If the cell is not a number, skip to the next cell
+            continue
+
+# Convert temperature columns from Kelvin to Celsius
+for col in temp_columns:    
+    for index, value in df[col].items():
+        try:
+            df.loc[index, col] = value - 273
+        except (ValueError, TypeError):
+            # If the cell is not a number, skip to the next cell
+            continue
+
+# Display the first few rows of the modified DataFrame
+print(df.head())
+
+df.to_csv('final_processed_test.csv', index=False)
